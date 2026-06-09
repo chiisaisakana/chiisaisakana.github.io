@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Understanding Anxiety: Causes, Symptoms & Coping Strategies | Mindtest Resources</title>
+<meta name="description" content="A comprehensive guide to understanding anxiety: what causes anxiety disorders, how to recognize symptoms, evidence-based coping strategies, and when to seek professional help.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://mindtest.shop/article-anxiety.html">
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Serif:wght@400;600;700&family=Noto+Sans:wght@300;400;500;600;700&display=swap');
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --coral: #EEA990; --coral-dark: #E07A6A; --coral-light: #FDE8E0;
+    --indigo: #6B7DB3; --indigo-dark: #3D4D7A; --indigo-light: #E8ECF8;
+    --cream: #FFF9F5; --cream-dark: #F0E8E2;
+    --text: #2D2B3A; --text-secondary: #6E6B7E; --text-muted: #9A97A8;
+    --bg: #FFFCFA;
+    --bg-card: rgba(255,255,255,0.7);
+    --bg-gradient: linear-gradient(180deg, #FFF9F5 0%, #F5F0FA 50%, #FFF5F0 100%);
+    --shadow-sm: 0 2px 8px rgba(45,43,58,0.04);
+    --shadow-md: 0 8px 24px rgba(45,43,58,0.06);
+    --radius-md: 12px; --radius-lg: 16px; --radius-xl: 24px; --radius-full: 9999px;
+    --nav-h: 64px;
+    --font-display: 'Noto Serif', serif;
+    --font-body: 'Noto Sans', 'Inter', sans-serif;
+  }
+  body { font-family: var(--font-body); font-size: 16px; line-height: 1.8; color: var(--text); background: var(--bg); min-height: 100vh; }
+  body::before { content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--bg-gradient), radial-gradient(ellipse at 15% 25%, rgba(238,169,144,0.08) 0%, transparent 55%); pointer-events: none; z-index: -1; }
+  h1,h2,h3,h4 { font-family: var(--font-display); font-weight: 700; line-height: 1.4; color: var(--indigo-dark); }
+  a { color: var(--coral-dark); }
+  a:hover { color: var(--coral); }
+  .nav { position: fixed; top: 0; left: 0; right: 0; height: var(--nav-h); background: rgba(255,255,255,0.8); backdrop-filter: blur(16px); border-bottom: 1px solid var(--cream-dark); z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 0 32px; }
+  .nav-left { display: flex; align-items: center; gap: 24px; }
+  .nav-logo { display: flex; align-items: center; gap: 10px; font-size: 18px; font-weight: 700; color: var(--indigo-dark); cursor: pointer; }
+  .nav-logo .logo-icon { width: 32px; height: 32px; background: linear-gradient(135deg, var(--coral-light), var(--indigo-light)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; }
+  .nav-links { display: flex; gap: 4px; }
+  .nav-link { padding: 8px 16px; border-radius: var(--radius-full); font-size: 14px; font-weight: 500; color: var(--text-secondary); cursor: pointer; border: none; background: none; font-family: var(--font-body); transition: 0.3s; }
+  .nav-link:hover { background: var(--cream); color: var(--indigo); }
+  .nav-link.active { background: var(--indigo-light); color: var(--indigo-dark); font-weight: 600; }
+  .container { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+  .page { padding-top: calc(var(--nav-h) + 40px); min-height: 100vh; padding-bottom: 60px; }
+
+  .article-meta { display: flex; gap: 16px; align-items: center; margin-bottom: 8px; font-size: 13px; color: var(--text-muted); flex-wrap: wrap; }
+  .article-meta .tag { background: var(--coral-light); color: var(--coral-dark); padding: 3px 12px; border-radius: var(--radius-full); font-weight: 600; }
+  .article-hero h1 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 20px; }
+  .article-hero .subtitle { font-size: 1.15rem; color: var(--text-secondary); line-height: 1.8; }
+
+  .article-body { padding-top: 20px; }
+  .article-body h2 { font-size: 1.6rem; margin: 40px 0 16px; padding-bottom: 10px; border-bottom: 2px solid var(--coral-light); }
+  .article-body h3 { font-size: 1.25rem; margin: 28px 0 12px; }
+  .article-body p { color: var(--text-secondary); margin-bottom: 16px; font-size: 15.5px; }
+  .article-body ul, .article-body ol { padding-left: 24px; margin: 16px 0; }
+  .article-body li { color: var(--text-secondary); margin-bottom: 8px; }
+  .article-body .info-box { background: var(--indigo-light); border-left: 4px solid var(--indigo); padding: 20px 24px; border-radius: 0 var(--radius-md) var(--radius-md) 0; margin: 24px 0; }
+  .article-body .info-box p { margin: 0; color: var(--indigo-dark); font-weight: 500; }
+  .article-body .warning-box { background: var(--coral-light); border-left: 4px solid var(--coral); padding: 20px 24px; border-radius: 0 var(--radius-md) var(--radius-md) 0; margin: 24px 0; }
+  .article-body .warning-box strong { color: var(--coral-dark); }
+  .article-body .tip-list { list-style: none; padding: 0; }
+  .article-body .tip-list li { padding: 10px 0 10px 36px; position: relative; border-bottom: 1px solid var(--cream-dark); }
+  .article-body .tip-list li::before { content: '→'; position: absolute; left: 12px; color: var(--coral); font-weight: 700; }
+  .article-body table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+  .article-body th { text-align: left; padding: 12px 16px; background: var(--indigo-light); font-weight: 600; font-size: 13px; color: var(--indigo-dark); text-transform: uppercase; letter-spacing: 1px; }
+  .article-body td { padding: 12px 16px; border-bottom: 1px solid var(--cream-dark); color: var(--text-secondary); }
+
+  .toc { background: var(--bg-card); border-radius: var(--radius-lg); border: 1px solid var(--cream-dark); padding: 24px; margin-bottom: 32px; }
+  .toc h3 { font-size: 15px; margin-bottom: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
+  .toc ol { padding-left: 20px; }
+  .toc li { margin-bottom: 6px; }
+  .toc a { color: var(--indigo); font-size: 14px; font-weight: 500; }
+
+  .article-cta { background: var(--coral-light); border-radius: var(--radius-xl); padding: 32px; text-align: center; margin: 40px 0; }
+  .article-cta h3 { font-size: 1.3rem; margin-bottom: 12px; }
+  .article-cta p { color: var(--text-secondary); margin-bottom: 16px; }
+  .btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; border: none; border-radius: var(--radius-full); font-size: 15px; font-weight: 600; cursor: pointer; background: linear-gradient(135deg, var(--coral), var(--coral-dark)); color: #fff; text-decoration: none; transition: 0.3s; }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(238,169,144,0.4); }
+
+  .related { padding: 32px 0; border-top: 1px solid var(--cream-dark); margin-top: 40px; }
+  .related h3 { font-size: 1.2rem; margin-bottom: 16px; }
+  .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+  .related-card { background: var(--bg-card); border-radius: var(--radius-md); border: 1px solid var(--cream-dark); padding: 20px; transition: 0.3s; }
+  .related-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+  .related-card .emoji { font-size: 28px; margin-bottom: 8px; }
+  .related-card h4 { font-size: 14px; margin-bottom: 4px; }
+  .related-card p { font-size: 12px; color: var(--text-muted); }
+
+  .footer { text-align: center; padding: 40px 24px; color: var(--text-muted); font-size: 13px; border-top: 1px solid var(--cream-dark); margin-top: 40px; }
+  .footer-links { display: flex; justify-content: center; gap: 20px; margin-bottom: 12px; flex-wrap: wrap; }
+
+  @media (max-width: 640px) {
+    .nav { padding: 0 16px; }
+    .nav-link { font-size: 12px; padding: 6px 10px; }
+    .article-body h2 { font-size: 1.3rem; }
+    .related-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-left">
+    <div class="nav-logo" onclick="location.href='index.html'">
+      <div class="logo-icon">🌊</div>
+      <span>Mindtest</span>
+    </div>
+    <div class="nav-links">
+      <button class="nav-link" onclick="location.href='index.html'">Home</button>
+      <button class="nav-link" onclick="location.href='about.html'">About</button>
+      <button class="nav-link active">Resources</button>
+      <button class="nav-link" onclick="location.href='terms.html'">Terms</button>
+    </div>
+  </div>
+</nav>
+
+<div class="page">
+  <div class="container">
+    <div class="article-hero">
+      <div class="article-meta">
+        <span class="tag">Mental Health</span>
+        <span>June 7, 2026</span>
+        <span>10 min read</span>
+      </div>
+      <h1>Understanding Anxiety: A Comprehensive Guide to Causes, Symptoms & Coping Strategies</h1>
+      <p class="subtitle">Anxiety is one of the most common mental health challenges people face. This article explores what anxiety really is, how to recognize its signs, evidence-based ways to manage it, and when it becomes more than just normal worry.</p>
+    </div>
+
+    <!-- Table of Contents -->
+    <div class="toc">
+      <h3>📋 In This Article</h3>
+      <ol>
+        <li><a href="#what-is-anxiety">What Is Anxiety?</a></li>
+        <li><a href="#types">Types of Anxiety Disorders</a></li>
+        <li><a href="#symptoms">Symptoms: Physical, Emotional & Cognitive</a></li>
+        <li><a href="#causes">What Causes Anxiety?</a></li>
+        <li><a href="#coping">Evidence-Based Coping Strategies</a></li>
+        <li><a href="#when-to-seek">When to Seek Professional Help</a></li>
+        <li><a href="#prevention">Lifestyle & Prevention</a></li>
+      </ol>
+    </div>
+
+    <div class="article-body">
+      <h2 id="what-is-anxiety">1. What Is Anxiety?</h2>
+      <p>Anxiety is your body's natural response to stress. It's a feeling of fear or dread that often accompanies situations where you feel perilled or out of control. <strong>A small amount of anxiety can be normal — even helpful</strong>. For example, it can help you stay alert during a presentation, avoid dangerous situations, or perform better at work or school.</p>
+      <p>However, when anxiety becomes persistent, excessive, and interferes with your daily life, it may be classified as an anxiety disorder. According to the World Health Organization, anxiety disorders are the most common type of mental disorder, affecting approximately <strong>264 million people worldwide</strong>.</p>
+      <p>The key distinction between normal anxiety and an anxiety disorder lies in three factors: <strong>intensity</strong>, <strong>duration</strong>, and <strong>functional impairment</strong>. If your anxiety feels disproportionate to the situation, lasts for weeks or months, or causes you to avoid social situations, work, or daily activities, it may be time to seek help.</p>
+
+      <div class="info-box">
+        <p>💡 <strong>Key Insight:</strong> Anxiety is not a sign of weakness. It is a natural biological response that, when functioning normally, is designed to protect you. Understanding this can help reduce the shame many people feel about experiencing anxiety.</p>
+      </div>
+
+      <h2 id="types">2. Types of Anxiety Disorders</h2>
+      <p>Anxiety is not a single condition — it encompasses several different disorders, each with its own characteristics and symptoms. Understanding the different types can help you recognize what you or someone you know might be experiencing.</p>
+
+      <h3>Generalized Anxiety Disorder (GAD)</h3>
+      <p>GAD involves chronic, excessive worry about everyday things — such as health, finances, work, or family — that is difficult to control. People with GAD often worry about multiple areas of life simultaneously, and the worry persists for at least six months. The worry is disproportionate to the actual situation and causes significant distress.</p>
+
+      <h3>Panic Disorder</h3>
+      <p>Panic disorder involves recurrent panic attacks — sudden episodes of intense fear that peak within minutes. Symptoms include heart palpitations, sweating, trembling, shortness of breath, chest pain, nausea, dizziness, and a fear of losing control or dying. People with panic disorder often develop a fear of having more attacks, which can lead to avoidance behaviors.</p>
+
+      <h3>Social Anxiety Disorder</h3>
+      <p>Social anxiety (social phobia) is an intense fear of social situations where you might be judged, embarrassed, or scrutinized by others. This can range from mild nervousness at public speaking to severe avoidance of all social interactions. People with social anxiety often worry for days or weeks before a social event.</p>
+
+      <h3>Specific Phobias</h3>
+      <p>Specific phobias involve an excessive, irrational fear of a specific object or situation, such as heights (acrophobia), spiders (arachnophobia), flying (aviophobia), or needles (trypanophobia). The fear causes immediate anxiety and leads to avoidance of the phobic stimulus.</p>
+
+      <h3>Obsessive-Compulsive Disorder (OCD) & PTSD</h3>
+      <p>While now classified separately in the DSM-5, OCD and Post-Traumatic Stress Disorder (PTSD) share significant features with anxiety disorders. OCD involves persistent, intrusive thoughts (obsessions) and repetitive behaviors (compulsions) performed to reduce anxiety. PTSD develops after exposure to a traumatic event and involves flashbacks, hypervigilance, and avoidance of trauma reminders.</p>
+
+      <h2 id="symptoms">3. Symptoms: Physical, Emotional & Cognitive</h2>
+      <p>Anxiety manifests in three main dimensions, and recognizing all of them is crucial for proper understanding and management.</p>
+
+      <table>
+        <thead><tr><th>Dimension</th><th>Common Symptoms</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Physical</strong></td><td>Increased heart rate, sweating, trembling, muscle tension, fatigue, headaches, stomach issues, rapid breathing, dizziness</td></tr>
+          <tr><td><strong>Emotional</strong></td><td>Feeling nervous, restless, tense, helpless, dread, irritability, feeling on edge, fear of losing control</td></tr>
+          <tr><td><strong>Cognitive</strong></td><td>Excessive worry, racing thoughts, difficulty concentrating, catastrophizing (expecting the worst), intrusive thoughts, inability to shut off the brain</td></tr>
+        </tbody>
+      </table>
+
+      <p>Many people experience physical symptoms of anxiety before they even realize they are anxious. This is because the body's fight-or-flight response triggers a cascade of physiological changes — including the release of adrenaline and cortisol — before the conscious mind processes the feeling of anxiety. This is why physical symptoms like rapid heartbeat, stomach knots, or muscle tension are often the first warning signs.</p>
+
+      <h2 id="causes">4. What Causes Anxiety?</h2>
+      <p>Anxiety is caused by a complex interplay of biological, psychological, and environmental factors. There is rarely a single cause. Understanding the contributing factors can help reduce self-blame and guide treatment decisions.</p>
+
+      <h3>Biological Factors</h3>
+      <p><strong>Genetics:</strong> Anxiety disorders can run in families, suggesting a genetic component. However, genes alone do not determine whether you will develop an anxiety disorder — they may make you more susceptible to environmental influences.</p>
+      <p><strong>Brain Chemistry:</strong> Imbalances in neurotransmitters — particularly serotonin, dopamine, and gamma-aminobutyric acid (GABA) — play a role in regulating mood and anxiety. Modern research also highlights the involvement of the amygdala, the brain's fear center, in anxiety disorders.</p>
+      <p><strong>Health Conditions:</strong> Certain medical conditions, such as thyroid disorders, heart disease, diabetes, and chronic pain, can cause or worsen anxiety symptoms.</p>
+
+      <h3>Psychological Factors</h3>
+      <p><strong>Personality:</strong> People with certain personality traits, such as perfectionism, high self-criticism, or low self-esteem, are more prone to anxiety.</p>
+      <p><strong>Cognitive Patterns:</strong> Negative thinking patterns, including catastrophizing, black-and-white thinking, and overgeneralization, contribute significantly to anxiety development and maintenance.</p>
+
+      <h3>Environmental & Lifestyle Factors</h3>
+      <p><strong>Stressful Life Events:</strong> Trauma, abuse, loss of a loved one, divorce, job loss, or financial problems can trigger or exacerbate anxiety. Cumulative stress from multiple sources is particularly impactful.</p>
+      <p><strong>Lifestyle:</strong> Chronic sleep deprivation, excessive caffeine intake, lack of physical activity, poor nutrition, and substance use (alcohol, drugs) can all increase anxiety levels.</p>
+
+      <h2 id="coping">5. Evidence-Based Coping Strategies</h2>
+      <p>There are many strategies backed by scientific research that can help manage anxiety. Here are the most effective approaches:</p>
+
+      <h3>Deep Breathing Exercises</h3>
+      <p>Deep breathing activates the parasympathetic nervous system, which counteracts the fight-or-flight response. The most effective technique is the <strong>4-7-8 method</strong>: inhale for 4 seconds, hold for 7 seconds, and exhale slowly for 8 seconds. Repeat 4-5 times. This technique can reduce anxiety within minutes.</p>
+
+      <h3>Mindfulness & Meditation</h3>
+      <p>Research shows that regular mindfulness meditation can reduce anxiety symptoms by up to 38%. Mindfulness involves paying attention to the present moment without judgment. When anxious thoughts arise, observe them without trying to suppress or analyze them. Apps like Headspace, Calm, or free resources on YouTube can guide beginners through meditation practice.</p>
+
+      <h3>Cognitive Behavioral Techniques</h3>
+      <p>Cognitive Behavioral Therapy (CBT) is the gold-standard treatment for anxiety disorders. Key techniques include:</p>
+      <ul class="tip-list">
+        <li><strong>Thought Challenge:</strong> When you notice a negative thought, ask: "Is this thought based on facts or feelings? What evidence supports it? What evidence contradicts it?"</li>
+        <li><strong>Behavioral Experiments:</strong> Test your anxious predictions by gradually facing feared situations. For example, if you fear public speaking, start by speaking to one trusted person, then a small group, then gradually larger audiences.</li>
+        <li><strong>Worry Time:</strong> Schedule 15-20 minutes each day specifically for worrying. When anxious thoughts arise outside this window, gently remind yourself to save them for your worry time.</li>
+      </ul>
+
+      <h3>Physical Exercise</h3>
+      <p>Regular aerobic exercise is as effective as medication for mild to moderate anxiety in some studies. Exercise releases endorphins, reduces stress hormones, and promotes neuroplasticity (the brain's ability to form new, healthier connections). Aim for at least 30 minutes of moderate exercise (brisk walking, cycling, swimming) five times per week.</p>
+
+      <h3>Progressive Muscle Relaxation</h3>
+      <p>This technique involves systematically tensing and then relaxing each muscle group in your body, starting from your toes and working up to your head. It helps you become aware of the difference between tension and relaxation, and trains your body to release physical anxiety symptoms. Research shows it can significantly reduce both physical and psychological anxiety symptoms.</p>
+
+      <div class="info-box">
+        <p>🧠 <strong>Take Our Free Anxiety Test:</strong> Wondering if your anxiety level might need attention? Try our free Social Anxiety Screening assessment on the Mindtest homepage. It takes about 10 minutes and provides personalized insights.</p>
+      </div>
+
+      <h2 id="when-to-seek">6. When to Seek Professional Help</h2>
+      <p>While self-help strategies can be effective for mild anxiety, professional help is recommended when:</p>
+      <ul>
+        <li>Anxiety interferes with work, relationships, or daily activities</li>
+        <li>You experience panic attacks (sudden, intense episodes of fear with physical symptoms)</li>
+        <li>You avoid social situations, places, or activities due to anxiety</li>
+        <li>You use alcohol, drugs, or medication to cope with anxiety</li>
+        <li>Self-help strategies have not helped after several weeks</li>
+        <li>You have thoughts of self-harm or suicide</li>
+      </ul>
+
+      <div class="warning-box">
+        <strong>🚨 If you or someone you know is experiencing a mental health crisis:</strong> Please contact a crisis hotline immediately. In China, call the Beijing Suicide Research and Prevention Center at <strong>010-82951332</strong> or the National Mental Health Hotline at <strong>400-161-9995</strong>. If you are in another country, search for "suicide hotline [your country]."
+      </div>
+
+      <p>Professional treatments for anxiety include Cognitive Behavioral Therapy (CBT), medication (such as SSRIs), and combinations of both. Research consistently shows that CBT combined with lifestyle changes is the most effective long-term approach.</p>
+
+      <h2 id="prevention">7. Lifestyle & Prevention</h2>
+      <p>Maintaining good mental health is an ongoing process. These evidence-based lifestyle habits can help prevent anxiety and support long-term emotional well-being:</p>
+      <ul>
+        <li><strong>Prioritize Sleep:</strong> Aim for 7-9 hours of quality sleep per night. Establish a regular sleep schedule, create a relaxing bedtime routine, and limit screen time before bed.</li>
+        <li><strong>Limit Caffeine & Alcohol:</strong> Both substances can trigger or worsen anxiety symptoms. Try reducing or eliminating them and observe the difference.</li>
+        <li><strong>Nourish Your Brain:</strong> A balanced diet rich in omega-3 fatty acids (fish, flaxseed), B vitamins (leafy greens, whole grains), and magnesium (nuts, seeds) supports brain health and emotional regulation.</li>
+        <li><strong>Build Social Connections:</strong> Strong social support is one of the strongest predictors of mental health resilience. Make time for meaningful connections with friends, family, or community groups.</li>
+        <li><strong>Practice Self-Compassion:</strong> Treat yourself with the same kindness you would offer a friend. Research shows that self-compassion is more effective than self-criticism for building emotional resilience.</li>
+      </ul>
+
+      <p><strong>Remember:</strong> Anxiety is treatable. If you're struggling, you're not alone, and you don't have to face it by yourself. Taking the first step — even just reading this article — shows courage and self-awareness.</p>
+
+      <!-- CTA -->
+      <div class="article-cta">
+        <h3>🧠 Take Our Free Mental Health Assessment</h3>
+        <p>Get personalized insights about your anxiety level with our evidence-based screening tool.</p>
+        <a href="index.html" class="btn-primary">Start Assessment →</a>
+      </div>
+
+      <!-- Related Articles -->
+      <div class="related">
+        <h3>More Resources</h3>
+        <div class="related-grid">
+          <div class="related-card" onclick="location.href='#'">
+            <div class="emoji">😴</div>
+            <h4>Sleep Quality Assessment</h4>
+            <p>Evaluate your sleep patterns</p>
+          </div>
+          <div class="related-card" onclick="location.href='#'">
+            <div class="emoji">💪</div>
+            <h4>Stress Level Test</h4>
+            <p>Measure your stress levels</p>
+          </div>
+          <div class="related-card" onclick="location.href='#'">
+            <div class="emoji">🫂</div>
+            <h4>Social Anxiety Screen</h4>
+            <p>Screen for social anxiety</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="article-anxiety.html">Resources</a>
+  </div>
+  <p>&copy; 2025 Mindtest &middot; Mental Health Platform | Results for reference only, not a medical diagnosis</p>
+</div>
+
+<script>
+  // Adsterra Popunder
+  (function() {
+    var s = document.createElement('script');
+    s.src = 'https://talentpastryadvisedly.com/6b/c7/f8/6bc7f847aabef2e03bd1b667c60a1328.js';
+    s.async = true;
+    document.head.appendChild(s);
+  })();
+  // Adsterra SocialBar
+  (function() {
+    var s = document.createElement('script');
+    s.src = 'https://pl29678647.effectivecpmnetwork.com/02/85/cf/0285cff60ec6786f3aae9401d8a4e13d.js';
+    s.async = true;
+    document.head.appendChild(s);
+  })();
+</script>
+<!-- ===== FOOTER & ADS ===== -->
+<footer style="background:transparent; padding:0; border-top:none; margin-top:60px;">
+  <!-- Adsterra Ad Container -->
+  <div style="max-width:728px; margin:0 auto; padding:32px 0 24px;">
+    <div style="text-align:center; margin:0 auto 12px; overflow:hidden; border-radius:12px; background:rgba(255,255,255,0.5); border:1px solid var(--cream-dark); box-shadow:var(--shadow-sm);">
+      <script>
+        atOptions = {
+          'key' : '7399176015898a5b41f2c41d9f6cd7b6',
+          'format' : 'iframe',
+          'height' : 90,
+          'width' : 728,
+          'params' : {}
+        };
+      </script>
+      <script src="https://talentpastryadvisedly.com/7399176015898a5b41f2c41d9f6cd7b6/invoke.js"></script>
+    </div>
+    <div style="text-align:center; margin:0 auto 12px; overflow:hidden; border-radius:12px; background:rgba(255,255,255,0.5); border:1px solid var(--cream-dark); box-shadow:var(--shadow-sm);">
+      <script async="async" data-cfasync="false" src="https://pl29678646.effectivecpmnetwork.com/3c479f3424f982b35328e920e6f83092/invoke.js"></script>
+      <div id="container-3c479f3424f982b35328e920e6f83092" style="max-width:300px; margin:0 auto;"></div>
+    </div>
+    <div style="text-align:center; margin:0 auto 12px; overflow:hidden; border-radius:12px; background:rgba(255,255,255,0.5); border:1px solid var(--cream-dark); box-shadow:var(--shadow-sm);">
+      <script>
+        atOptions = {
+          'key' : '523c88b9d8b3591935d187be2e8f8d4b',
+          'format' : 'iframe',
+          'height' : 60,
+          'width' : 468,
+          'params' : {}
+        };
+      </script>
+      <script src="https://talentpastryadvisedly.com/523c88b9d8b3591935d187be2e8f8d4b/invoke.js"></script>
+    </div>
+    <div style="text-align:center; margin:0 auto 16px; overflow:hidden; border-radius:12px; background:rgba(255,255,255,0.5); border:1px solid var(--cream-dark); box-shadow:var(--shadow-sm);">
+      <script>
+        atOptions = {
+          'key' : '67aac74be6a6eca15b98aaed233409ee',
+          'format' : 'iframe',
+          'height' : 50,
+          'width' : 320,
+          'params' : {}
+        };
+      </script>
+      <script src="https://talentpastryadvisedly.com/67aac74be6a6eca15b98aaed233409ee/invoke.js"></script>
+    </div>
+  </div>
+  <!-- Footer Content -->
+  <div style="text-align:center;padding:24px;color:var(--text-muted);font-size:13px;border-top:1px solid var(--cream-dark);background:transparent;">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="article-anxiety.html">Resources</a>
+    </div>
+    <p>&copy; 2025 Mindtest &middot; Mental Health Platform | Results for reference only, not a medical diagnosis</p>
+  </div>
+</footer>
+
+</body>
+</html>

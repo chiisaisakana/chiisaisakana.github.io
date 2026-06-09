@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service · Mindtest</title>
+<meta name="description" content="Mindtest Terms of Service. Read our terms of use, privacy policy, disclaimer, and user responsibilities for the free mental health assessment platform.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://mindtest.shop/terms.html">
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Serif:wght@400;600;700&family=Noto+Sans:wght@300;400;500;600;700&display=swap');
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --coral: #EEA990; --coral-dark: #E07A6A; --coral-light: #FDE8E0;
+    --indigo: #6B7DB3; --indigo-dark: #3D4D7A; --indigo-light: #E8ECF8;
+    --cream: #FFF9F5; --cream-dark: #F0E8E2;
+    --text: #2D2B3A; --text-secondary: #6E6B7E; --text-muted: #9A97A8;
+    --bg: #FFFCFA;
+    --bg-card: rgba(255,255,255,0.7);
+    --bg-gradient: linear-gradient(180deg, #FFF9F5 0%, #F5F0FA 50%, #FFF5F0 100%);
+    --shadow-sm: 0 2px 8px rgba(45,43,58,0.04);
+    --shadow-md: 0 8px 24px rgba(45,43,58,0.06);
+    --radius-md: 12px; --radius-lg: 16px; --radius-xl: 24px; --radius-full: 9999px;
+    --nav-h: 64px;
+    --font-display: 'Noto Serif', serif;
+    --font-body: 'Noto Sans', 'Inter', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body); font-size: 16px; line-height: 1.7;
+    color: var(--text); background: var(--bg); min-height: 100vh;
+    overflow-x: hidden;
+  }
+  body::before {
+    content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: var(--bg-gradient),
+      radial-gradient(ellipse at 15% 25%, rgba(238,169,144,0.08) 0%, transparent 55%);
+    pointer-events: none; z-index: -1;
+  }
+
+  h1,h2,h3,h4 { font-family: var(--font-display); font-weight: 700; line-height: 1.3; color: var(--indigo-dark); }
+  a { color: var(--coral-dark); text-decoration: none; }
+  a:hover { color: var(--coral); }
+
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; height: var(--nav-h);
+    background: rgba(255,255,255,0.8); backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--cream-dark); z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 32px;
+  }
+  .nav-left { display: flex; align-items: center; gap: 24px; }
+  .nav-logo {
+    display: flex; align-items: center; gap: 10px; font-family: var(--font-display);
+    font-size: 18px; font-weight: 700; color: var(--indigo-dark); cursor: pointer;
+  }
+  .nav-logo .logo-icon { width: 32px; height: 32px; background: linear-gradient(135deg, var(--coral-light), var(--indigo-light)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; }
+  .nav-links { display: flex; align-items: center; gap: 4px; }
+  .nav-link { padding: 8px 16px; border-radius: var(--radius-full); font-size: 14px; font-weight: 500; color: var(--text-secondary); cursor: pointer; transition: 0.3s; border: none; background: none; font-family: var(--font-body); }
+  .nav-link:hover { background: var(--cream); color: var(--indigo); }
+  .nav-link.active { background: var(--indigo-light); color: var(--indigo-dark); font-weight: 600; }
+
+  .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+  .page { padding-top: calc(var(--nav-h) + 40px); min-height: 100vh; }
+
+  .terms-header { text-align: center; padding: 30px 0 40px; }
+  .terms-header h1 { font-size: 2.4rem; margin-bottom: 12px; }
+  .terms-header .updated { font-size: 14px; color: var(--text-muted); }
+
+  .terms-content { padding: 20px 0 60px; }
+  .terms-card { background: var(--bg-card); backdrop-filter: blur(16px); border-radius: var(--radius-xl); box-shadow: var(--shadow-sm); border: 1px solid var(--cream-dark); padding: 36px; margin-bottom: 24px; }
+  .terms-card h2 { font-size: 1.4rem; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--coral-light); display: flex; align-items: center; gap: 10px; }
+  .terms-card h3 { font-size: 1.1rem; margin: 16px 0 8px; color: var(--text-secondary); }
+  .terms-card p, .terms-card li { color: var(--text-secondary); line-height: 1.9; font-size: 15px; }
+  .terms-card ul, .terms-card ol { padding-left: 24px; margin: 12px 0; }
+  .terms-card li { margin-bottom: 8px; }
+  .terms-card .highlight { background: var(--coral-light); padding: 16px 20px; border-radius: var(--radius-md); margin: 16px 0; border-left: 4px solid var(--coral); }
+
+  .footer { text-align: center; padding: 40px 24px; color: var(--text-muted); font-size: 13px; border-top: 1px solid var(--cream-dark); margin-top: 40px; }
+  .footer-links { display: flex; justify-content: center; gap: 20px; margin-bottom: 12px; flex-wrap: wrap; }
+
+  .btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 10px 24px; border: none; border-radius: var(--radius-full); font-size: 14px; font-weight: 600; cursor: pointer; background: linear-gradient(135deg, var(--coral), var(--coral-dark)); color: #fff; text-decoration: none; }
+
+  @media (max-width: 640px) {
+    .nav { padding: 0 16px; }
+    .nav-link { font-size: 12px; padding: 6px 10px; }
+    .terms-card { padding: 24px 18px; }
+    .terms-header h1 { font-size: 1.8rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav">
+  <div class="nav-left">
+    <div class="nav-logo" onclick="location.href='index.html'">
+      <div class="logo-icon">🌊</div>
+      <span>Mindtest</span>
+    </div>
+    <div class="nav-links">
+      <button class="nav-link" onclick="location.href='index.html'">Home</button>
+      <button class="nav-link" onclick="location.href='about.html'">About</button>
+      <button class="nav-link" onclick="location.href='article-anxiety.html'">Resources</button>
+      <button class="nav-link active">Terms</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== CONTENT ===== -->
+<div class="page">
+  <div class="container">
+    <div class="terms-header">
+      <h1>Terms of Service</h1>
+      <p class="updated">Last Updated: June 7, 2026</p>
+    </div>
+
+    <div class="terms-content">
+      <!-- Acceptance -->
+      <div class="terms-card">
+        <h2>1. Acceptance of Terms</h2>
+        <p>By accessing and using the Mindtest platform (the "Platform"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the Platform.</p>
+        <p>You must be at least 13 years old to use this Platform. By using the Platform, you represent and warrant that you meet this age requirement.</p>
+      </div>
+
+      <!-- Description -->
+      <div class="terms-card">
+        <h2>2. Description of Service</h2>
+        <p>Mindtest provides free, evidence-based mental health screening assessments for self-awareness and educational purposes. Our assessments include:</p>
+        <ul>
+          <li>Mental Health Assessment (mood, anxiety, sleep quality)</li>
+          <li>Personality Test (five key personality dimensions)</li>
+          <li>Stress Level Test (perceived stress and coping ability)</li>
+          <li>Social Anxiety Screen (social anxiety tendencies)</li>
+          <li>Sleep Quality Assessment (sleep patterns and routine)</li>
+        </ul>
+        <div class="highlight">
+          <strong>Important Disclaimer:</strong> Mindtest assessments are <u>not</u> diagnostic tools. They do not constitute medical advice, diagnosis, or treatment. The results should not be used as a substitute for professional mental health evaluation. If you are experiencing a mental health crisis, please contact a licensed professional or a crisis hotline immediately.
+        </div>
+      </div>
+
+      <!-- Privacy -->
+      <div class="terms-card">
+        <h2>3. Privacy & Data Collection</h2>
+        <p>Mindtest is committed to protecting your privacy. Our data practices include:</p>
+        <ul>
+          <li><strong>Account Information:</strong> We store only a username and encrypted password for login purposes.</li>
+          <li><strong>Assessment Data:</strong> All answers are stored locally on your device (localStorage) and are never transmitted to our servers.</li>
+          <li><strong>No Personal Information:</strong> We do not collect, store, or share your real name, email, phone number, location, or any other personally identifiable information.</li>
+          <li><strong>Cookies:</strong> We use localStorage for interface preferences (theme). We do not use tracking cookies.</li>
+          <li><strong>Third-Party Services:</strong> We display Google AdSense advertisements, which may use cookies to serve personalized ads. Google's privacy policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+        </ul>
+      </div>
+
+      <!-- User Conduct -->
+      <div class="terms-card">
+        <h2>4. User Responsibilities</h2>
+        <p>By using Mindtest, you agree to:</p>
+        <ul>
+          <li>Provide accurate and truthful information when registering an account</li>
+          <li>Maintain the security of your account credentials</li>
+          <li>Not use the Platform for any unlawful purpose</li>
+          <li>Not attempt to reverse-engineer, hack, or exploit the Platform</li>
+          <li>Understand that assessment results are for educational purposes only</li>
+          <li>Seek professional help for any serious mental health concerns</li>
+        </ul>
+      </div>
+
+      <!-- Intellectual Property -->
+      <div class="terms-card">
+        <h2>5. Intellectual Property</h2>
+        <p>All content, design, code, and materials on the Mindtest Platform are owned by Mindtest and protected by intellectual property laws. You may:</p>
+        <ul>
+          <li>Use the Platform for personal, non-commercial purposes</li>
+          <li>Share assessment results with your healthcare provider</li>
+          <li>Print or save your assessment reports for personal reference</li>
+        </ul>
+        <p>You may <strong>not</strong>:</p>
+        <ul>
+          <li>Copy, reproduce, or distribute Platform content without permission</li>
+          <li>Create derivative works based on the Platform's content</li>
+          <li>Remove or alter any copyright or attribution notices</li>
+        </ul>
+      </div>
+
+      <!-- Limitation of Liability -->
+      <div class="terms-card">
+        <h2>6. Limitation of Liability</h2>
+        <p>Mindtest and its team members shall not be held liable for any damages arising from the use of this Platform, including but not limited to:</p>
+        <ul>
+          <li>Inaccurate or incomplete assessment results</li>
+          <li>Reliance on information provided on the Platform</li>
+          <li>Technical issues, downtime, or data loss</li>
+          <li>Any mental or emotional effects from completing assessments</li>
+          <li>Third-party content or advertisements displayed on the Platform</li>
+        </ul>
+        <p>The Platform is provided "as is" without any warranties, express or implied.</p>
+      </div>
+
+      <!-- Changes -->
+      <div class="terms-card">
+        <h2>7. Changes to Terms</h2>
+        <p>Mindtest reserves the right to modify these Terms of Service at any time. We will post the updated terms on this page with a revised "Last Updated" date. Your continued use of the Platform after changes constitutes acceptance of the new terms.</p>
+      </div>
+
+      <!-- Contact -->
+      <div class="terms-card">
+        <h2>8. Contact Information</h2>
+        <p>If you have any questions about these Terms of Service, please contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:contact@mindtest.shop">contact@mindtest.shop</a></p>
+      </div>
+
+      <!-- CTA -->
+      <div style="text-align: center; margin-top: 32px;">
+        <a href="index.html" class="btn-primary">🏠 Back to Home</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div class="footer">
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="article-anxiety.html">Resources</a>
+  </div>
+  <p>&copy; 2025 Mindtest &middot; Mental Health Platform | Results for reference only, not a medical diagnosis</p>
+</div>
+
+<script>
+  // Adsterra Popunder
+  (function() {
+    var s = document.createElement('script');
+    s.src = 'https://talentpastryadvisedly.com/6b/c7/f8/6bc7f847aabef2e03bd1b667c60a1328.js';
+    s.async = true;
+    document.head.appendChild(s);
+  })();
+  // Adsterra SocialBar
+  (function() {
+    var s = document.createElement('script');
+    s.src = 'https://pl29678647.effectivecpmnetwork.com/02/85/cf/0285cff60ec6786f3aae9401d8a4e13d.js';
+    s.async = true;
+    document.head.appendChild(s);
+  })();
+</script>
+<!-- ===== FOOTER & ADS ===== -->
+<footer style="background:transparent; padding:0; border-top:none; margin-top:60px;">
+  <!-- Adsterra Ad Container -->
+  <div style="max-width:728px; margin:0 auto; padding:32px 0 24px;">
+    <div style="text-align:center; margin:0 auto 12px; overflow:hidden; border-radius:12px; background:rgba(255,255,255,0.5); border:1px solid var(--cream-dark); box-shadow:var(--shadow-sm);">
+      <script>
+        atOptions = {
+          'key' : '7399176015898a5b41f2c41d9f6cd7b6',
+          'format' : 'iframe',
+          'height' : 90,
+          'width' : 728,
+          'params' : {}
+        };
+      </script>
+      <script src="https://talentpastryadvisedly.com/7399176015898a5b41f2c41d9f6cd7b6/invoke.js"></script>
+    </div>
+    <div style="text-align:center; margin:0 auto 12px; overflow:hidden; border-radius:12px; background:rgba(255,255,255,0.5); border:1px solid var(--cream-dark); box-shadow:var(--shadow-sm);">
+      <script async="async" data-cfasync="false" src="https://pl29678646.effectivecpmnetwork.com/3c479f3424f982b35328e920e6f83092/invoke.js"></script>
+      <div id="container-3c479f3424f982b35328e920e6f83092" style="max-width:300px; margin:0 auto;"></div>
+    </div>
+    <div style="text-align:center; margin:0 auto 12px; overflow:hidden; border-radius:12px; background:rgba(255,255,255,0.5); border:1px solid var(--cream-dark); box-shadow:var(--shadow-sm);">
+      <script>
+        atOptions = {
+          'key' : '523c88b9d8b3591935d187be2e8f8d4b',
+          'format' : 'iframe',
+          'height' : 60,
+          'width' : 468,
+          'params' : {}
+        };
+      </script>
+      <script src="https://talentpastryadvisedly.com/523c88b9d8b3591935d187be2e8f8d4b/invoke.js"></script>
+    </div>
+    <div style="text-align:center; margin:0 auto 16px; overflow:hidden; border-radius:12px; background:rgba(255,255,255,0.5); border:1px solid var(--cream-dark); box-shadow:var(--shadow-sm);">
+      <script>
+        atOptions = {
+          'key' : '67aac74be6a6eca15b98aaed233409ee',
+          'format' : 'iframe',
+          'height' : 50,
+          'width' : 320,
+          'params' : {}
+        };
+      </script>
+      <script src="https://talentpastryadvisedly.com/67aac74be6a6eca15b98aaed233409ee/invoke.js"></script>
+    </div>
+  </div>
+  <!-- Footer Content -->
+  <div style="text-align:center;padding:24px;color:var(--text-muted);font-size:13px;border-top:1px solid var(--cream-dark);background:transparent;">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="article-anxiety.html">Resources</a>
+    </div>
+    <p>&copy; 2025 Mindtest &middot; Mental Health Platform | Results for reference only, not a medical diagnosis</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us · Mindtest - Our Mission</title>
+<meta name="description" content="Learn about Mindtest — a free mental health assessment platform committed to making evidence-based mental health screening accessible to everyone.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://mindtest.shop/about.html">
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Serif:wght@400;600;700&family=Noto+Sans:wght@300;400;500;600;700&display=swap');
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --coral: #EEA990; --coral-dark: #E07A6A; --coral-light: #FDE8E0;
+    --indigo: #6B7DB3; --indigo-dark: #3D4D7A; --indigo-light: #E8ECF8;
+    --cream: #FFF9F5; --cream-dark: #F0E8E2;
+    --sage: #7E9EA3;
+    --success: #56BA5A;
+    --text: #2D2B3A; --text-secondary: #6E6B7E; --text-muted: #9A97A8;
+    --bg: #FFFCFA;
+    --bg-card: rgba(255,255,255,0.7);
+    --bg-gradient: linear-gradient(180deg, #FFF9F5 0%, #F5F0FA 50%, #FFF5F0 100%);
+    --shadow-sm: 0 2px 8px rgba(45,43,58,0.04);
+    --shadow-md: 0 8px 24px rgba(45,43,58,0.06);
+    --shadow-lg: 0 20px 56px rgba(45,43,58,0.08);
+    --shadow-xl: 0 32px 80px rgba(45,43,58,0.10);
+    --radius-sm: 8px; --radius-md: 12px; --radius-lg: 16px; --radius-xl: 24px; --radius-full: 9999px;
+    --transition: 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+    --nav-h: 64px;
+    --font-display: 'Noto Serif', serif;
+    --font-body: 'Noto Sans', 'Inter', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body); font-size: 16px; line-height: 1.7;
+    color: var(--text); background: var(--bg); min-height: 100vh;
+    overflow-x: hidden; -webkit-font-smoothing: antialiased;
+  }
+  body::before {
+    content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: var(--bg-gradient),
+      radial-gradient(ellipse at 15% 25%, rgba(238,169,144,0.08) 0%, transparent 55%),
+      radial-gradient(ellipse at 85% 30%, rgba(107,125,179,0.06) 0%, transparent 55%);
+    pointer-events: none; z-index: -1;
+  }
+
+  h1,h2,h3,h4 { font-family: var(--font-display); font-weight: 700; line-height: 1.3; color: var(--indigo-dark); }
+  a { color: var(--coral-dark); text-decoration: none; }
+  a:hover { color: var(--coral); }
+
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; height: var(--nav-h);
+    background: rgba(255,255,255,0.8); backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--cream-dark); z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 32px;
+  }
+  .nav-left { display: flex; align-items: center; gap: 24px; }
+  .nav-logo {
+    display: flex; align-items: center; gap: 10px; font-family: var(--font-display);
+    font-size: 18px; font-weight: 700; color: var(--indigo-dark); cursor: pointer;
+  }
+  .nav-logo .logo-icon { width: 32px; height: 32px; background: linear-gradient(135deg, var(--coral-light), var(--indigo-light)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; }
+  .nav-links { display: flex; align-items: center; gap: 4px; }
+  .nav-link { padding: 8px 16px; border-radius: var(--radius-full); font-size: 14px; font-weight: 500; color: var(--text-secondary); cursor: pointer; transition: var(--transition); border: none; background: none; font-family: var(--font-body); }
+  .nav-link:hover { background: var(--cream); color: var(--indigo); }
+  .nav-link.active { background: var(--indigo-light); color: var(--indigo-dark); font-weight: 600; }
+
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  .page { padding-top: calc(var(--nav-h) + 40px); min-height: 100vh; }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 24px; border: none; border-radius: var(--radius-full); font-family: var(--font-body); font-size: 14px; font-weight: 600; cursor: pointer; transition: var(--transition); }
+  .btn-primary { background: linear-gradient(135deg, var(--coral) 0%, var(--coral-dark) 100%); color: #fff; box-shadow: 0 4px 15px rgba(238,169,144,0.3); }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(238,169,144,0.4); }
+  .btn-secondary { background: var(--bg-card); color: var(--indigo); border: 1.5px solid var(--cream-dark); }
+
+  .about-hero { text-align: center; padding: 40px 0 60px; }
+  .about-hero h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 16px; }
+  .about-hero h1 .hl { background: linear-gradient(135deg, var(--coral) 0%, var(--coral-dark) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .about-hero p { font-size: 1.1rem; color: var(--text-secondary); max-width: 640px; margin: 0 auto; line-height: 1.9; }
+
+  .about-section { padding: 40px 0; }
+  .about-card { background: var(--bg-card); backdrop-filter: blur(16px); border-radius: var(--radius-xl); box-shadow: var(--shadow-sm); border: 1px solid var(--cream-dark); padding: 36px; margin-bottom: 24px; }
+  .about-card h2 { font-size: 1.5rem; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+  .about-card p { color: var(--text-secondary); line-height: 1.9; margin-bottom: 12px; }
+  .about-card ul { list-style: none; padding: 0; }
+  .about-card li { padding: 10px 0; border-bottom: 1px solid var(--cream-dark); display: flex; align-items: flex-start; gap: 10px; color: var(--text-secondary); }
+  .about-card li:last-child { border-bottom: none; }
+  .about-card li::before { content: '✓'; color: var(--coral); font-weight: 700; flex-shrink: 0; }
+
+  .team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; margin-top: 24px; }
+  .team-card { text-align: center; padding: 28px 20px; background: var(--bg-card); border-radius: var(--radius-lg); border: 1px solid var(--cream-dark); }
+  .team-card .avatar { width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; font-size: 36px; }
+  .team-card h3 { font-size: 16px; margin-bottom: 4px; }
+  .team-card .role { font-size: 13px; color: var(--text-muted); margin-bottom: 8px; }
+  .team-card p { font-size: 13px; color: var(--text-secondary); }
+
+  .contact-box { background: var(--indigo-light); border-radius: var(--radius-lg); padding: 32px; text-align: center; margin-top: 24px; }
+  .contact-box h3 { font-size: 1.3rem; margin-bottom: 12px; }
+  .contact-box p { color: var(--text-secondary); margin-bottom: 16px; }
+  .contact-box a { color: var(--coral-dark); font-weight: 600; }
+
+  .footer { text-align: center; padding: 40px 24px; color: var(--text-muted); font-size: 13px; border-top: 1px solid var(--cream-dark); margin-top: 60px; }
+  .footer-links { display: flex; justify-content: center; gap: 20px; margin-bottom: 12px; flex-wrap: wrap; }
+
+  @media (max-width: 640px) {
+    .nav { padding: 0 16px; }
+    .nav-link { font-size: 12px; padding: 6px 10px; }
+    .about-card { padding: 24px 18px; }
+    .team-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav">
+  <div class="nav-left">
+    <div class="nav-logo" onclick="location.href='index.html'">
+      <div class="logo-icon">🌊</div>
+      <span>Mindtest</span>
+    </div>
+    <div class="nav-links">
+      <button class="nav-link" onclick="location.href='index.html'">Home</button>
+      <button class="nav-link active">About</button>
+      <button class="nav-link" onclick="location.href='article-anxiety.html'">Resources</button>
+      <button class="nav-link" onclick="location.href='terms.html'">Terms</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== CONTENT ===== -->
+<div class="page">
+  <div class="container">
+    <div class="about-hero">
+      <h1>About <span class="hl">Mindtest</span></h1>
+      <p>We believe mental health awareness starts with self-knowledge. Our mission is to make evidence-based mental health screening tools free, accessible, and private for everyone — no matter where they are.</p>
+    </div>
+
+    <div class="about-section">
+      <!-- Our Mission -->
+      <div class="about-card">
+        <h2>🎯 Our Mission</h2>
+        <p>Mental health is just as important as physical health, yet millions of people lack access to basic screening tools. Mindtest was created to bridge this gap by providing:</p>
+        <ul>
+          <li>Evidence-based mental health assessments grounded in established psychological research</li>
+          <li>Complete anonymity — no real names, emails, or personal data required</li>
+          <li>100% free access to professional-grade screening tools</li>
+          <li>Privacy-first design with local data storage</li>
+          <li>Accessible in multiple languages to serve a global community</li>
+        </ul>
+      </div>
+
+      <!-- What We Offer -->
+      <div class="about-card">
+        <h2>📊 What We Offer</h2>
+        <p>Mindtest provides five comprehensive mental health screening assessments:</p>
+        <ul>
+          <li><strong>Mental Health Assessment</strong> — Evaluates mood, anxiety, sleep quality, energy levels, and cognitive functioning over the past two weeks</li>
+          <li><strong>Personality Test</strong> — Explores your personality traits across five key dimensions: extraversion, conscientiousness, neuroticism, openness, and agreeableness</li>
+          <li><strong>Stress Level Test</strong> — Measures your perceived stress levels, physical stress responses, coping abilities, and emotional resilience</li>
+          <li><strong>Social Anxiety Screen</strong> — Screens for social anxiety tendencies including performance anxiety, physical responses, and social avoidance behaviors</li>
+          <li><strong>Sleep Quality Assessment</strong> — Evaluates your sleep patterns including falling asleep, sleep maintenance, daytime function, and sleep routine</li>
+        </ul>
+      </div>
+
+      <!-- Our Values -->
+      <div class="about-card">
+        <h2>💎 Our Values</h2>
+        <p><strong>Privacy is fundamental.</strong> Unlike most health platforms, we do not collect your name, email, phone number, or any personally identifiable information. Your assessment answers are stored locally on your device and never uploaded to any server.</p>
+        <p><strong>Mental health awareness should be universal.</strong> Every tool we provide is completely free. We believe that access to mental health screening is a right, not a privilege.</p>
+        <p><strong>Science-based, not guesswork.</strong> Our assessments are built using validated screening instruments used in clinical research, including modified PHQ-9, GAD-7, PSS, and other evidence-based tools.</p>
+      </div>
+
+      <!-- Team -->
+      <div class="about-card">
+        <h2>👥 Our Team</h2>
+        <p>Mindtest is built and maintained by a dedicated team passionate about mental health technology:</p>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="avatar" style="background: linear-gradient(135deg, #FDE8E0, #E8ECF8);">🧠</div>
+            <h3>Research & Development</h3>
+            <div class="role">Psychology Team</div>
+            <p>Our assessment tools are reviewed by trained professionals to ensure accuracy and reliability</p>
+          </div>
+          <div class="team-card">
+            <div class="avatar" style="background: linear-gradient(135deg, #E8ECF8, #E2EDEE);">💻</div>
+            <h3>Engineering</h3>
+            <div class="role">Development Team</div>
+            <p>Built with modern web technologies for speed, accessibility, and a beautiful user experience</p>
+          </div>
+          <div class="team-card">
+            <div class="avatar" style="background: linear-gradient(135deg, #E2EDEE, #EDE0F5);">🔒</div>
+            <h3>Privacy & Trust</h3>
+            <div class="role">Security Team</div>
+            <p>Committed to zero-data-collection principles and transparent data practices</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="about-card">
+        <h2>❓ Frequently Asked Questions</h2>
+        <ul>
+          <li><strong>Is Mindtest a replacement for professional diagnosis?</strong> No. Mindtest assessments are for self-awareness and educational purposes only. They do not constitute medical diagnosis or treatment advice. If you are experiencing significant psychological distress, please consult a licensed professional.</li>
+          <li><strong>Is my data safe?</strong> Yes. All assessment answers are stored locally on your device. We do not collect, store, or share any personal data. No cookies are used for tracking.</li>
+          <li><strong>Is it really free?</strong> Yes, Mindtest is and always will be 100% free. We are supported by advertising revenue to keep the platform accessible.</li>
+          <li><strong>Can I trust the results?</strong> Our assessments are based on validated psychological screening instruments. However, they are not diagnostic tools. For clinical diagnosis, please consult a qualified mental health professional.</li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="contact-box">
+        <h3>📬 Get in Touch</h3>
+        <p>We value your feedback and are always happy to help. If you have questions, suggestions, or just want to say hello:</p>
+        <p>Email: <a href="mailto:contact@mindtest.shop">contact@mindtest.shop</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div class="footer">
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="article-anxiety.html">Resources</a>
+    <a href="index.html" onclick="event.preventDefault();document.getElementById('modal-privacy') && document.getElementById('modal-privacy').classList.add('show')">Privacy Policy</a>
+  </div>
+  <p>&copy; 2025 Mindtest &middot; Mental Health Platform | Results for reference only, not a medical diagnosis</p>
+</div>
+
+<script>
+  // Adsterra Popunder
+  (function() {
+    var s = document.createElement('script');
+    s.src = 'https://talentpastryadvisedly.com/6b/c7/f8/6bc7f847aabef2e03bd1b667c60a1328.js';
+    s.async = true;
+    document.head.appendChild(s);
+  })();
+  // Adsterra SocialBar
+  (function() {
+    var s = document.createElement('script');
+    s.src = 'https://pl29678647.effectivecpmnetwork.com/02/85/cf/0285cff60ec6786f3aae9401d8a4e13d.js';
+    s.async = true;
+    document.head.appendChild(s);
+  })();
+</script>
+<!-- Footer Ads: centered banners -->
+<div class="container" style="text-align:center; margin:32px auto 0;">
+  <div class="ad-container ad-banner" style="padding:12px; background:rgba(0,0,0,0.02); border-radius:8px; display:inline-block;">
+    <script>
+      atOptions = {
+        'key' : '7399176015898a5b41f2c41d9f6cd7b6',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script src="https://talentpastryadvisedly.com/7399176015898a5b41f2c41d9f6cd7b6/invoke.js"></script>
+  </div>
+</div>
+
+<div class="container" style="text-align:center; margin:16px auto 0;">
+  <div class="ad-container" style="padding:12px; background:rgba(0,0,0,0.02); border-radius:8px; display:inline-block;">
+    <script>
+      atOptions = {
+        'key' : '699544e500c0276ac8b689b3b8179eef',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+      };
+    </script>
+    <script src="https://talentpastryadvisedly.com/699544e500c0276ac8b689b3b8179eef/invoke.js"></script>
+  </div>
+</div>
+
+<div class="container" style="text-align:center; margin:16px auto 48px;">
+  <div class="ad-container" style="padding:12px; background:rgba(0,0,0,0.02); border-radius:8px; display:inline-block;">
+    <script>
+      atOptions = {
+        'key' : '523c88b9d8b3591935d187be2e8f8d4b',
+        'format' : 'iframe',
+        'height' : 60,
+        'width' : 468,
+        'params' : {}
+      };
+    </script>
+    <script src="https://talentpastryadvisedly.com/523c88b9d8b3591935d187be2e8f8d4b/invoke.js"></script>
+  </div>
+</div>
+
+<!-- ===== FOOTER & ADS ===== -->
+<footer style="background:transparent; padding:0; border-top:none; margin-top:60px;">
+  <!-- Adsterra Ad Container -->
+  <div style="max-width:728px; margin:0 auto; padding:32px 0 24px;">
+    <div style="text-align:center; margin:0 auto 12px; overflow:hidden; border-radius:12px; background:rgba(255,255,255,0.5); border:1px solid var(--cream-dark); box-shadow:var(--shadow-sm);">
+      <script>
+        atOptions = {
+          'key' : '7399176015898a5b41f2c41d9f6cd7b6',
+          'format' : 'iframe',
+          'height' : 90,
+          'width' : 728,
+          'params' : {}
+        };
+      </script>
+      <script src="https://talentpastryadvisedly.com/7399176015898a5b41f2c41d9f6cd7b6/invoke.js"></script>
+    </div>
+    <div style="text-align:center; margin:0 auto 12px; overflow:hidden; border-radius:12px; background:rgba(255,255,255,0.5); border:1px solid var(--cream-dark); box-shadow:var(--shadow-sm);">
+      <script async="async" data-cfasync="false" src="https://pl29678646.effectivecpmnetwork.com/3c479f3424f982b35328e920e6f83092/invoke.js"></script>
+      <div id="container-3c479f3424f982b35328e920e6f83092" style="max-width:300px; margin:0 auto;"></div>
+    </div>
+    <div style="text-align:center; margin:0 auto 12px; overflow:hidden; border-radius:12px; background:rgba(255,255,255,0.5); border:1px solid var(--cream-dark); box-shadow:var(--shadow-sm);">
+      <script>
+        atOptions = {
+          'key' : '523c88b9d8b3591935d187be2e8f8d4b',
+          'format' : 'iframe',
+          'height' : 60,
+          'width' : 468,
+          'params' : {}
+        };
+      </script>
+      <script src="https://talentpastryadvisedly.com/523c88b9d8b3591935d187be2e8f8d4b/invoke.js"></script>
+    </div>
+    <div style="text-align:center; margin:0 auto 16px; overflow:hidden; border-radius:12px; background:rgba(255,255,255,0.5); border:1px solid var(--cream-dark); box-shadow:var(--shadow-sm);">
+      <script>
+        atOptions = {
+          'key' : '67aac74be6a6eca15b98aaed233409ee',
+          'format' : 'iframe',
+          'height' : 50,
+          'width' : 320,
+          'params' : {}
+        };
+      </script>
+      <script src="https://talentpastryadvisedly.com/67aac74be6a6eca15b98aaed233409ee/invoke.js"></script>
+    </div>
+  </div>
+  <!-- Footer Content -->
+  <div style="text-align:center;padding:24px;color:var(--text-muted);font-size:13px;border-top:1px solid var(--cream-dark);background:transparent;">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="article-anxiety.html">Resources</a>
+    </div>
+    <p>&copy; 2025 Mindtest &middot; Mental Health Platform | Results for reference only, not a medical diagnosis</p>
+  </div>
+</footer>
+
+</body>
+</html>

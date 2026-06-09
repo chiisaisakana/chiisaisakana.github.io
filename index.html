@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mindtest · Free Online Mental Health Assessment</title>
+<meta name="description" content="Take free, anonymous mental health assessments online. Evidence-based tools for anxiety, stress, depression, personality, sleep quality, and social anxiety screening.">
+<meta name="keywords" content="free mental health test, anxiety test online, depression screening, stress level test, personality test, social anxiety test, sleep quality assessment, mental health screening, free psychology test">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://mindtest.shop/">
+
+<!-- Open Graph / Social Media -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mindtest.shop/">
+<meta property="og:title" content="Mindtest · Free Online Mental Health Assessment">
+<meta property="og:description" content="Take free, anonymous mental health assessments online. Evidence-based tools for anxiety, stress, depression, personality, sleep quality, and social anxiety screening.">
+<meta property="og:image" content="https://mindtest.shop/og-image.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mindtest · Free Online Mental Health Assessment">
+<meta name="twitter:description" content="Take free, anonymous mental health assessments online. Evidence-based tools for anxiety, stress, depression, personality, sleep quality, and social anxiety screening.">
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Mindtest",
+  "url": "https://mindtest.shop/",
+  "description": "Free online mental health assessment platform. Evidence-based screening tools for anxiety, stress, depression, personality, sleep quality, and social anxiety.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://mindtest.shop/?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Mindtest · Mental Health Assessment",
+  "url": "https://mindtest.shop/",
+  "description": "Free online mental health screening platform offering evidence-based assessments for mental wellbeing.",
+  "medicalAudience": "General Public",
+  "healthCondition": {
+    "@type": "MedicalCondition",
+    "name": "Mental Health"
+  }
+}
+</script>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Serif:wght@400;600;700&family=Noto+Sans:wght@300;400;500;600;700&display=swap');
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --coral: #EEA990;
+    --coral-dark: #E07A6A;
+    --coral-light: #FDE8E0;
+    --indigo: #6B7DB3;
+    --indigo-dark: #3D4D7A;
+    --indigo-light: #E8ECF8;
+    --cream: #FFF9F5;
+    --cream-dark: #F0E8E2;
+    --sage: #7E9EA3;
+    --success: #56BA5A;
+    --text: #2D2B3A;
+    --text-secondary: #6E6B7E;
+    --text-muted: #9A97A8;
+    --bg: #FFFCFA;
+    --bg-card: rgba(255,255,255,0.7);
+    --bg-gradient: linear-gradient(180deg, #FFF9F5 0%, #F5F0FA 50%, #FFF5F0 100%);
+    --shadow-sm: 0 2px 8px rgba(45,43,58,0.04);
+    --shadow-md: 0 8px 24px rgba(45,43,58,0.06);
+    --shadow-lg: 0 20px 56px rgba(45,43,58,0.08);
+    --shadow-xl: 0 32px 80px rgba(45,43,58,0.10);
+    --radius-sm: 8px; --radius-md: 12px; --radius-lg: 16px; --radius-xl: 24px; --radius-full: 9999px;
+    --transition: 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+    --nav-h: 64px;
+    --font-display: 'Noto Serif', serif;
+    --font-body: 'Noto Sans', 'Inter', sans-serif;
+  }
+
+  [data-theme="ocean"] {
+    --coral: #7EBCE6; --coral-dark: #5A9AC4; --coral-light: #D6ECFA;
+    --indigo: #2C5F7A; --indigo-dark: #1A3D52; --indigo-light: #D6E8F5;
+    --cream: #F5FAFE; --cream-dark: #E0ECF5; --bg: #FAFCFE;
+    --bg-gradient: linear-gradient(180deg, #F5FAFE 0%, #E8F0FA 50%, #F0F5FA 100%);
+  }
+  [data-theme="forest"] {
+    --coral: #8FBC8F; --coral-dark: #6A9E6A; --coral-light: #E0F0E0;
+    --indigo: #3D6B4A; --indigo-dark: #254A30; --indigo-light: #DEEEE0;
+    --cream: #F5FAF5; --cream-dark: #E0EDE2; --bg: #FAFCF9;
+    --bg-gradient: linear-gradient(180deg, #F5FAF5 0%, #E8F2E8 50%, #F0F7F0 100%);
+  }
+  [data-theme="lavender"] {
+    --coral: #C9A0DC; --coral-dark: #A87AC4; --coral-light: #EDE0F5;
+    --indigo: #6B4F8A; --indigo-dark: #4A3366; --indigo-light: #E8DCF5;
+    --cream: #FAF5FD; --cream-dark: #EDE5F2; --bg: #FCFAFF;
+    --bg-gradient: linear-gradient(180deg, #FAF5FD 0%, #F0E8F8 50%, #F8F3FF 100%);
+  }
+  [data-theme="dark"] {
+    --coral: #BB86FC; --coral-dark: #9C64E0; --coral-light: #2D2540;
+    --indigo: #8A7DB3; --indigo-dark: #C4B5E8; --indigo-light: #3D3560;
+    --cream: #1E1E2E; --cream-dark: #2D2B42; --bg: #151520;
+    --text: #E8E6F0; --text-secondary: #A8A3B8; --text-muted: #7A7690;
+    --bg-card: rgba(30,30,46,0.85);
+    --bg-gradient: linear-gradient(180deg, #151520 0%, #1A1A2E 50%, #151520 100%);
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.2); --shadow-md: 0 8px 24px rgba(0,0,0,0.3); --shadow-lg: 0 20px 56px rgba(0,0,0,0.4);
+  }
+
+  body {
+    font-family: var(--font-body); font-size: 16px; line-height: 1.7;
+    color: var(--text); background: var(--bg); min-height: 100vh;
+    overflow-x: hidden; -webkit-font-smoothing: antialiased; transition: background 0.4s ease, color 0.4s ease;
+  }
+  body::before {
+    content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: var(--bg-gradient);
+    background-image: var(--bg-gradient),
+      radial-gradient(ellipse at 15% 25%, rgba(238,169,144,0.08) 0%, transparent 55%),
+      radial-gradient(ellipse at 85% 30%, rgba(107,125,179,0.06) 0%, transparent 55%),
+      radial-gradient(ellipse at 50% 75%, rgba(238,169,144,0.05) 0%, transparent 50%);
+    pointer-events: none; z-index: -1; transition: background 0.4s ease;
+  }
+
+  h1,h2,h3,h4 { font-family: var(--font-display); font-weight: 700; line-height: 1.3; color: var(--indigo-dark); transition: color 0.4s ease; }
+  a { color: var(--coral-dark); text-decoration: none; }
+  a:hover { color: var(--coral); }
+
+  /* ===== NAV ===== */
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; height: var(--nav-h);
+    background: rgba(255,255,255,0.8); backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--cream-dark); z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 32px; transition: background 0.4s ease, border-color 0.4s ease;
+  }
+  [data-theme="dark"] .nav { background: rgba(21,21,32,0.9); }
+  .nav-left { display: flex; align-items: center; gap: 24px; }
+  .nav-logo {
+    display: flex; align-items: center; gap: 10px; font-family: var(--font-display);
+    font-size: 18px; font-weight: 700; color: var(--indigo-dark); cursor: pointer; transition: color 0.4s ease;
+  }
+  .nav-logo .logo-icon { width: 32px; height: 32px; background: linear-gradient(135deg, var(--coral-light), var(--indigo-light)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; }
+  .nav-links { display: flex; align-items: center; gap: 4px; }
+  .nav-link { padding: 8px 16px; border-radius: var(--radius-full); font-size: 14px; font-weight: 500; color: var(--text-secondary); cursor: pointer; transition: var(--transition); border: none; background: none; font-family: var(--font-body); }
+  .nav-link:hover { background: var(--cream); color: var(--indigo); }
+  .nav-link.active { background: var(--indigo-light); color: var(--indigo-dark); font-weight: 600; }
+  .nav-right { display: flex; align-items: center; gap: 8px; }
+  .nav-user { display: flex; align-items: center; gap: 12px; }
+  .nav-avatar { width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(135deg, var(--coral), var(--coral-dark)); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600; cursor: pointer; }
+  .theme-btn {
+    width: 32px; height: 32px; border: none; border-radius: 50%; cursor: pointer;
+    display: flex; align-items: center; justify-content: center; font-size: 16px;
+    transition: var(--transition); background: var(--cream); color: var(--text-muted);
+  }
+  .theme-btn:hover { background: var(--cream-dark); transform: rotate(30deg); }
+  [data-theme="dark"] .theme-btn { background: #2D2540; color: #BB86FC; }
+  [data-theme="dark"] .theme-btn:hover { background: #3D3560; }
+
+  .theme-picker {
+    position: absolute; top: calc(var(--nav-h) - 8px); right: 80px;
+    background: var(--bg-card); backdrop-filter: blur(20px);
+    border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);
+    border: 1px solid var(--cream-dark); padding: 16px; display: none; z-index: 101; min-width: 200px;
+  }
+  .theme-picker.show { display: block; animation: pageIn 0.2s ease; }
+  .theme-picker h4 { font-size: 13px; color: var(--text-muted); font-weight: 500; margin-bottom: 10px; text-align: center; }
+  .theme-options { display: flex; flex-direction: column; gap: 6px; }
+  .theme-opt { display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-radius: var(--radius-sm); cursor: pointer; transition: var(--transition); border: none; background: none; font-family: var(--font-body); font-size: 13px; color: var(--text); width: 100%; text-align: left; }
+  .theme-opt:hover { background: var(--cream); }
+  .theme-opt.active { background: var(--coral-light); font-weight: 600; }
+  .theme-opt .swatch { width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--cream-dark); flex-shrink: 0; }
+
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  .page { display: none; padding-top: var(--nav-h); min-height: 100vh; }
+  .page.active { display: block; }
+  .page-fade { animation: pageIn 0.5s ease forwards; }
+  @keyframes pageIn { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+  @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+
+  /* ===== BUTTONS ===== */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 24px; border: none; border-radius: var(--radius-full); font-family: var(--font-body); font-size: 14px; font-weight: 600; cursor: pointer; transition: var(--transition); }
+  .btn-primary { background: linear-gradient(135deg, var(--coral) 0%, var(--coral-dark) 100%); color: #fff; box-shadow: 0 4px 15px rgba(238,169,144,0.3); }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(238,169,144,0.4); }
+  .btn-secondary { background: var(--bg-card); color: var(--indigo); border: 1.5px solid var(--cream-dark); backdrop-filter: blur(8px); }
+  .btn-secondary:hover { border-color: var(--coral); color: var(--coral-dark); }
+  .btn-sm { padding: 7px 16px; font-size: 13px; }
+  .btn-lg { padding: 14px 36px; font-size: 16px; }
+  .btn-ghost { background: transparent; color: var(--text-muted); padding: 6px 12px; font-weight: 500; }
+  .btn-ghost:hover { color: var(--indigo); }
+  .btn-block { width: 100%; justify-content: center; }
+
+  /* ===== AD PLACEMENTS ===== */
+  .ad-container {
+    width: 100%; overflow: hidden; text-align: center;
+    border-radius: var(--radius-md); background: rgba(255,255,255,0.3);
+    border: 1px solid var(--cream-dark); margin: 20px 0;
+    min-height: 90px; display: flex; align-items: center; justify-content: center;
+  }
+  [data-theme="dark"] .ad-container { background: rgba(30,30,46,0.4); }
+  .ad-container .ad-label { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px; }
+  .ad-banner { min-height: 60px; }
+  .ad-sidebar { min-height: 250px; }
+  .ad-inline { min-height: 90px; }
+
+  /* ===== HERO ===== */
+  .hero { min-height: calc(100vh - var(--nav-h)); display: flex; align-items: center; padding: 40px 0; position: relative; overflow: hidden; }
+  .hero-deco { display: none; }
+  .hero-content { text-align: center; max-width: 720px; margin: 0 auto; position: relative; z-index: 1; }
+  .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--bg-card); backdrop-filter: blur(8px); padding: 6px 18px 6px 8px; border-radius: var(--radius-full); box-shadow: var(--shadow-sm); margin-bottom: 24px; border: 1px solid var(--cream-dark); }
+  .hero-badge .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--success); animation: pulse 2s infinite; }
+  .hero-badge span { font-size: 13px; font-weight: 500; color: var(--text-secondary); }
+  .hero h1 { font-size: clamp(2.4rem, 5vw, 3.6rem); margin-bottom: 16px; }
+  .hero h1 .hl { background: linear-gradient(135deg, var(--coral) 0%, var(--coral-dark) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .hero p { font-size: 1.1rem; color: var(--text-secondary); max-width: 520px; margin: 0 auto 32px; line-height: 1.9; }
+  .hero-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 40px; }
+  .hero-stats { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+  .hero-stat { text-align: center; }
+  .hero-stat .num { font-family: var(--font-display); font-size: 2.2rem; font-weight: 700; color: var(--coral); line-height: 1; transition: color 0.4s ease; }
+  .hero-stat .lbl { font-size: 0.85rem; color: var(--text-muted); margin-top: 4px; }
+
+  /* ===== TEST CARDS ===== */
+  .section { padding: 60px 0; }
+  .section-title { text-align: center; font-size: 1.8rem; margin-bottom: 8px; }
+  .section-sub { text-align: center; color: var(--text-secondary); font-size: 15px; margin-bottom: 40px; }
+  .test-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+  .test-card { background: var(--bg-card); backdrop-filter: blur(16px); border-radius: var(--radius-xl); box-shadow: var(--shadow-sm); border: 1px solid var(--cream-dark); padding: 28px; transition: var(--transition); cursor: pointer; }
+  .test-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .test-card .icon-wrap { width: 48px; height: 48px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 16px; }
+  .test-card h3 { font-size: 17px; margin-bottom: 6px; }
+  .test-card p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px; }
+  .test-card .meta { display: flex; align-items: center; gap: 16px; font-size: 13px; color: var(--text-muted); flex-wrap: wrap; }
+  .test-card .meta span { display: flex; align-items: center; gap: 4px; }
+  .test-card .bottom { display: flex; align-items: center; justify-content: space-between; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--cream-dark); }
+  .test-card .free-badge { font-size: 12px; font-weight: 600; color: var(--success); background: rgba(86,186,90,0.1); padding: 4px 14px; border-radius: var(--radius-full); }
+
+  /* ===== MODAL ===== */
+  .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.35); backdrop-filter: blur(4px); z-index: 200; display: none; align-items: center; justify-content: center; padding: 24px; }
+  .modal-overlay.show { display: flex; }
+  .modal { background: var(--bg); border-radius: var(--radius-xl); box-shadow: var(--shadow-xl); width: 100%; max-width: 420px; padding: 36px 32px 28px; animation: pageIn 0.3s ease; max-height: 90vh; overflow-y: auto; border: 1px solid var(--cream-dark); }
+  .modal-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+  .modal-header h2 { font-size: 20px; }
+  .modal-close { width: 32px; height: 32px; border: none; background: var(--cream); border-radius: 50%; cursor: pointer; font-size: 18px; color: var(--text-muted); display: flex; align-items: center; justify-content: center; transition: var(--transition); }
+  .modal-close:hover { background: var(--cream-dark); }
+  .form-group { margin-bottom: 16px; }
+  .form-group label { display: block; font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 6px; }
+  .form-group input { width: 100%; padding: 11px 14px; border: 1.5px solid var(--cream-dark); border-radius: var(--radius-md); font-size: 14px; font-family: var(--font-body); transition: var(--transition); background: var(--cream); outline: none; color: var(--text); }
+  .form-group input:focus { border-color: var(--coral); background: var(--bg); box-shadow: 0 0 0 3px rgba(238,169,144,0.1); }
+  [data-theme="dark"] .form-group input { background: #2D2B42; color: #E8E6F0; }
+  .modal-footer { text-align: center; margin-top: 16px; font-size: 13px; color: var(--text-muted); }
+  .modal-footer a { color: var(--coral-dark); cursor: pointer; font-weight: 600; }
+  .modal .error-msg { color: #D32F2F; font-size: 13px; margin-top: 4px; display: none; }
+  .modal .error-msg.show { display: block; }
+
+  /* ===== QUIZ ===== */
+  .quiz-wrapper { max-width: 680px; margin: 0 auto; padding: 24px; }
+  .quiz-card { background: var(--bg-card); backdrop-filter: blur(20px); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); border: 1px solid var(--cream-dark); padding: 36px 36px 32px; transition: background 0.4s ease; }
+  .q-progress { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+  .q-progress .lbl { font-size: 13px; color: var(--text-muted); font-weight: 500; }
+  .q-progress .lbl strong { color: var(--indigo); }
+  .q-track { height: 6px; background: var(--cream-dark); border-radius: 6px; overflow: hidden; margin-bottom: 24px; }
+  .q-track-fill { height: 100%; background: linear-gradient(90deg, var(--coral), var(--coral-dark)); border-radius: 6px; transition: width 0.5s ease; }
+  .q-number { display: inline-flex; align-items: center; gap: 6px; background: var(--indigo-light); color: var(--indigo); padding: 4px 14px; border-radius: var(--radius-full); font-size: 12px; font-weight: 600; margin-bottom: 16px; }
+  .q-text { font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; line-height: 1.7; margin-bottom: 24px; min-height: 50px; }
+  .opts { display: flex; flex-direction: column; gap: 8px; }
+  .opt { display: flex; align-items: center; padding: 12px 18px; border: 1.5px solid var(--cream-dark); border-radius: var(--radius-md); cursor: pointer; transition: var(--transition); background: rgba(255,255,255,0.3); }
+  [data-theme="dark"] .opt { background: rgba(30,30,46,0.5); }
+  .opt:hover { border-color: var(--coral); background: var(--coral-light); transform: translateX(4px); }
+  .opt.selected { border-color: var(--coral); background: var(--coral-light); box-shadow: 0 2px 8px rgba(238,169,144,0.12); }
+  .opt .radio { width: 22px; height: 22px; border: 2px solid var(--text-muted); border-radius: 50%; flex-shrink: 0; margin-right: 12px; display: flex; align-items: center; justify-content: center; transition: var(--transition); }
+  .opt.selected .radio { border-color: var(--coral); background: linear-gradient(135deg, var(--coral), var(--coral-dark)); }
+  .opt.selected .radio::after { content: ''; width: 8px; height: 8px; background: #fff; border-radius: 50%; }
+  .opt .lbl { font-size: 15px; font-weight: 400; color: var(--text); }
+  .opt .hint { margin-left: auto; font-size: 12px; color: var(--text-muted); }
+  .q-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--cream-dark); }
+  .q-breadcrumb { display: flex; gap: 6px; justify-content: center; margin: 16px 0 0; flex-wrap: wrap; }
+  .q-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--cream-dark); transition: var(--transition); }
+  .q-dot.done { background: var(--coral); }
+  .q-dot.current { background: var(--coral-dark); box-shadow: 0 0 0 3px rgba(238,169,144,0.2); }
+
+  /* ===== RESULT ===== */
+  .result-wrap { max-width: 780px; margin: 0 auto; padding: 24px; }
+  .result-card { background: var(--bg-card); backdrop-filter: blur(20px); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); border: 1px solid var(--cream-dark); padding: 36px; transition: background 0.4s ease; }
+  .result-header { text-align: center; padding-bottom: 20px; border-bottom: 1px solid var(--cream-dark); }
+  .result-tier { display: inline-flex; align-items: center; gap: 6px; padding: 6px 18px; border-radius: var(--radius-full); font-size: 14px; font-weight: 600; margin-bottom: 16px; }
+  .result-tier.green { background: #E8F5E9; color: #4A8A5A; }
+  .result-tier.yellow { background: #FFF8E1; color: #B89A4A; }
+  .result-tier.orange { background: #FFF3E0; color: #C87A4A; }
+  .result-tier.red { background: #FFEBEE; color: #B85A5A; }
+  .result-header h2 { font-size: 1.5rem; }
+  .result-date { font-size: 13px; color: var(--text-muted); }
+  .result-summary { display: flex; align-items: center; gap: 32px; margin: 24px 0; flex-wrap: wrap; justify-content: center; }
+  .result-ring { position: relative; width: 130px; height: 130px; display: flex; flex-direction: column; align-items: center; justify-content: center; flex-shrink: 0; }
+  .result-ring svg { position: absolute; top: 0; left: 0; transform: rotate(-90deg); }
+  .result-ring .num { font-size: 36px; font-weight: 800; color: var(--indigo-dark); line-height: 1; font-family: var(--font-display); }
+  .result-ring .lbl { font-size: 11px; color: var(--text-muted); }
+  .result-brief { text-align: left; max-width: 380px; }
+  .result-brief h3 { font-size: 1.1rem; margin-bottom: 6px; }
+  .result-brief p { font-size: 14px; color: var(--text-secondary); line-height: 1.8; margin: 0; }
+  .result-dims { padding: 20px 0; border-bottom: 1px solid var(--cream-dark); }
+  .sec-title { display: flex; align-items: center; gap: 8px; font-family: var(--font-display); font-size: 15px; font-weight: 600; color: var(--indigo-dark); margin-bottom: 16px; }
+  .dim-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .dim-item { background: rgba(255,255,255,0.3); padding: 14px 16px; border-radius: var(--radius-md); border: 1px solid var(--cream-dark); }
+  [data-theme="dark"] .dim-item { background: rgba(30,30,46,0.5); }
+  .dim-item .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+  .dim-item .name { font-size: 11px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
+  .dim-item .pct { font-size: 17px; font-weight: 700; color: var(--indigo-dark); }
+  .dim-item .bar { height: 4px; background: var(--cream-dark); border-radius: 4px; overflow: hidden; }
+  .dim-item .fill { height: 100%; border-radius: 4px; transition: width 1s ease; }
+  .dim-item .status { font-size: 11px; margin-top: 4px; font-weight: 500; }
+  .result-advice { padding-top: 20px; }
+  .advice-list { list-style: none; padding: 0; }
+  .advice-item { display: flex; align-items: flex-start; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--cream-dark); }
+  .advice-item:last-child { border-bottom: none; }
+  .advice-item .dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; margin-top: 8px; }
+  .advice-item .text { font-size: 14px; line-height: 1.7; color: var(--text-secondary); }
+  .result-actions { display: flex; gap: 12px; justify-content: center; margin-top: 24px; flex-wrap: wrap; padding-top: 20px; border-top: 1px solid var(--cream-dark); }
+
+  /* ===== ADMIN ===== */
+  .admin-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; }
+  .admin-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 28px; }
+  .admin-stat-card { background: var(--bg-card); backdrop-filter: blur(12px); border-radius: var(--radius-lg); padding: 20px; border: 1px solid var(--cream-dark); text-align: center; }
+  .admin-stat-card .num { font-size: 28px; font-weight: 700; color: var(--indigo-dark); font-family: var(--font-display); }
+  .admin-stat-card .lbl { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+  .admin-table-wrap { overflow-x: auto; background: var(--bg-card); backdrop-filter: blur(12px); border-radius: var(--radius-lg); border: 1px solid var(--cream-dark); }
+  .admin-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .admin-table th { text-align: left; padding: 14px 16px; font-size: 12px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid var(--cream-dark); background: rgba(255,255,255,0.3); }
+  .admin-table td { padding: 12px 16px; border-bottom: 1px solid var(--cream-dark); }
+  .admin-table tr:last-child td { border-bottom: none; }
+  .admin-table tr:hover td { background: rgba(238,169,144,0.04); }
+  .admin-access-btn { position: fixed; bottom: 20px; right: 20px; z-index: 50; width: 44px; height: 44px; border-radius: 50%; background: var(--bg-card); backdrop-filter: blur(8px); border: 1px solid var(--cream-dark); box-shadow: var(--shadow-md); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 18px; color: var(--text-muted); transition: var(--transition); }
+  .admin-access-btn:hover { transform: scale(1.1); color: var(--indigo); }
+
+  /* ===== HISTORY ===== */
+  .history-item { display: flex; align-items: center; gap: 16px; background: var(--bg-card); border-radius: var(--radius-md); padding: 16px 20px; margin-bottom: 10px; border: 1px solid var(--cream-dark); backdrop-filter: blur(8px); }
+
+  /* ===== TOAST ===== */
+  .toast { position: fixed; bottom: 32px; left: 50%; transform: translateX(-50%) translateY(80px); background: var(--indigo-dark); color: #fff; padding: 14px 28px; border-radius: var(--radius-full); font-size: 14px; font-weight: 500; box-shadow: var(--shadow-lg); opacity: 0; transition: all 0.4s ease; z-index: 300; pointer-events: none; white-space: nowrap; }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  /* ===== FOOTER ===== */
+  .footer { text-align: center; padding: 40px 24px; color: var(--text-muted); font-size: 13px; border-top: 1px solid var(--cream-dark); margin-top: 40px; }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 640px) {
+    .nav { padding: 0 16px; }
+    .nav-links { gap: 2px; }
+    .nav-link { font-size: 12px; padding: 6px 10px; }
+    .hero { min-height: auto; padding: 30px 0; }
+    .hero-stats { gap: 20px; }
+    .test-grid { grid-template-columns: 1fr; }
+    .dim-grid { grid-template-columns: 1fr; }
+    .result-summary { flex-direction: column; text-align: center; }
+    .result-brief { text-align: center; }
+    .quiz-card { padding: 24px 18px; }
+    .quiz-wrapper, .result-wrap { padding: 16px; }
+    .q-nav { flex-direction: column; gap: 8px; }
+    .modal { padding: 28px 20px 24px; }
+    .result-card { padding: 24px 18px; }
+    .admin-stats { grid-template-columns: 1fr 1fr; }
+    .theme-picker { right: 55px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav" id="nav">
+  <div class="nav-left">
+    <div class="nav-logo" onclick="showHome()">
+      <div class="logo-icon">🌊</div>
+      <span>Mindtest</span>
+    </div>
+    <div class="nav-links">
+      <button class="nav-link active" onclick="showHome()">Home</button>
+      <button class="nav-link" onclick="showTests()">Tests</button>
+      <button class="nav-link" onclick="showHistory()">History</button>
+      <button class="nav-link" onclick="window.location.href='about.html'">About</button>
+      <button class="nav-link" onclick="window.location.href='article-anxiety.html'">Resources</button>
+    </div>
+  </div>
+  <div class="nav-right">
+    <button class="theme-btn" onclick="toggleThemePicker()" title="Theme">🎨</button>
+    <div class="theme-picker" id="theme-picker">
+      <h4>Choose Theme</h4>
+      <div class="theme-options">
+        <button class="theme-opt active" data-theme-val="default" onclick="setTheme('default')"><span class="swatch" style="background:linear-gradient(135deg,#EEA990,#E07A6A)"></span> Coral · Default</button>
+        <button class="theme-opt" data-theme-val="ocean" onclick="setTheme('ocean')"><span class="swatch" style="background:linear-gradient(135deg,#7EBCE6,#5A9AC4)"></span> Ocean Blue · Calm</button>
+        <button class="theme-opt" data-theme-val="forest" onclick="setTheme('forest')"><span class="swatch" style="background:linear-gradient(135deg,#8FBC8F,#6A9E6A)"></span> Forest Green · Natural</button>
+        <button class="theme-opt" data-theme-val="lavender" onclick="setTheme('lavender')"><span class="swatch" style="background:linear-gradient(135deg,#C9A0DC,#A87AC4)"></span> Lavender · Elegant</button>
+        <button class="theme-opt" data-theme-val="dark" onclick="setTheme('dark')"><span class="swatch" style="background:linear-gradient(135deg,#BB86FC,#9C64E0)"></span> Dark · Deep</button>
+      </div>
+    </div>
+    <div class="nav-user" id="nav-user"></div>
+  </div>
+</nav>
+
+<!-- ===== HOME ===== -->
+<div class="page active" id="page-home">
+  <section class="hero">
+    <div class="hero-deco d1"></div><div class="hero-deco d2"></div>
+    <div class="hero-content">
+      <div class="hero-badge"><span class="dot"></span><span id="hero-badge-text">Free · Professional Assessment</span></div>
+      <h1 id="hero-h1">Know Yourself, From the <span class="hl">Heart</span></h1>
+      <p id="hero-desc">Evidence-based assessment tools to help you understand your mental state. Scientific, anonymous, convenient, and completely free.</p>
+      <div class="hero-actions">
+        <button class="btn btn-primary btn-lg" id="hero-btn1" onclick="checkAuthThenStart()">Start Assessment <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+        <button class="btn btn-secondary btn-lg" id="hero-btn2" onclick="document.getElementById('tests-section').scrollIntoView({behavior:'smooth'})">Learn More</button>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="num">5</div><div class="lbl" id="hero-stat1">Assessments</div></div>
+        <div class="hero-stat" style="display:flex;align-items:center;"><div class="divider" style="width:1px;height:40px;background:var(--cream-dark);margin:auto;"></div></div>
+        <div class="hero-stat"><div class="num">54</div><div class="lbl" id="hero-stat2">Questions</div></div>
+        <div class="hero-stat" style="display:flex;align-items:center;"><div class="divider" style="width:1px;height:40px;background:var(--cream-dark);margin:auto;"></div></div>
+        <div class="hero-stat"><div class="num">7+</div><div class="lbl" id="hero-stat3">Dimensions</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tests Section (clean, no ads inside) -->
+  <section class="section" id="tests-section">
+    <div class="container">
+      <h2 class="section-title" id="section-title">All Assessments</h2>
+      <p class="section-sub" id="section-sub">All free. Choose one and start your self-discovery journey.</p>
+      <div class="test-grid" id="test-grid"></div>
+    </div>
+  </section>
+
+  <!-- Resources Section (clean, no ads inside) -->
+  <section class="section" id="resources-section">
+    <div class="container">
+      <h2 class="section-title">📚 Mental Health Resources</h2>
+      <p class="section-sub">Educational articles and tools to support your mental wellbeing journey</p>
+      <div class="test-grid">
+        <div class="test-card" onclick="window.location.href='article-anxiety.html'">
+          <div class="icon-wrap" style="background:#FDE8E0">🧠</div>
+          <h3>Understanding Anxiety</h3>
+          <p>A comprehensive guide to anxiety disorders: causes, symptoms, evidence-based coping strategies, and when to seek professional help.</p>
+          <div class="meta">
+            <span>📝 10 min read</span>
+            <span>📊 Evidence-based</span>
+          </div>
+          <div class="bottom">
+            <span class="free-badge">📖 Article</span>
+            <button class="btn btn-primary btn-sm">Read More</button>
+          </div>
+        </div>
+        <div class="test-card" onclick="window.location.href='about.html'">
+          <div class="icon-wrap" style="background:#E8ECF8">👥</div>
+          <h3>About Mindtest</h3>
+          <p>Learn about our mission, values, and the team dedicated to making mental health screening accessible to everyone, everywhere.</p>
+          <div class="meta">
+            <span>📝 5 min read</span>
+            <span>🌍 Global access</span>
+          </div>
+          <div class="bottom">
+            <span class="free-badge">ℹ️ Learn More</span>
+            <button class="btn btn-primary btn-sm">Read More</button>
+          </div>
+        </div>
+        <div class="test-card" onclick="window.location.href='terms.html'">
+          <div class="icon-wrap" style="background:#FFF8E1">📋</div>
+          <h3>Terms & Privacy</h3>
+          <p>Understand our terms of service, privacy commitment, data practices, and your rights as a user of the Mindtest platform.</p>
+          <div class="meta">
+            <span>📝 3 min read</span>
+            <span>🔒 Privacy-first</span>
+          </div>
+          <div class="bottom">
+            <span class="free-badge">📜 Legal</span>
+            <button class="btn btn-primary btn-sm">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ===== QUIZ ===== -->
+
+<!-- ===== QUIZ ===== -->
+<div class="page" id="page-quiz">
+  <div class="quiz-wrapper" id="quiz-wrapper"></div>
+</div>
+
+<!-- ===== RESULT ===== -->
+<div class="page" id="page-result">
+  <div class="result-wrap">
+    <div class="result-card page-fade" id="result-content"></div>
+  </div>
+</div>
+
+<!-- ===== HISTORY ===== -->
+<div class="page" id="page-history">
+  <div class="container" style="padding-top:calc(var(--nav-h) + 32px);padding-bottom:48px;">
+    <h2 id="history-title" style="margin-bottom:8px;">History</h2>
+    <p id="history-sub" style="color:var(--text-secondary);font-size:14px;margin-bottom:24px;">View your assessment history</p>
+    <div id="history-list"></div>
+  </div>
+</div>
+
+<!-- ===== ADMIN PAGE ===== -->
+<div class="page" id="page-admin">
+  <div class="container" style="padding-top:calc(var(--nav-h) + 32px);padding-bottom:48px;">
+    <div class="admin-header">
+      <div>
+        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+          <h2 id="admin-title" style="margin-bottom:4px;">Admin Panel</h2>
+          <span style="font-size:11px;background:var(--coral-light);color:var(--coral-dark);padding:2px 10px;border-radius:var(--radius-full);font-weight:600;">🔐 Admin Mode</span>
+        </div>
+        <p style="color:var(--text-secondary);font-size:14px;">View user registration &amp; platform data</p>
+      </div>
+      <div style="display:flex;gap:8px;">
+        <button class="btn btn-ghost btn-sm" onclick="showHome()" style="font-size:13px;">🏠 Back to Home</button>
+        <button class="btn btn-secondary btn-sm" onclick="lockAdmin()">🔒 Lock</button>
+      </div>
+    </div>
+    <div class="admin-stats" id="admin-stats"></div>
+    <div class="admin-table-wrap">
+      <table class="admin-table">
+        <thead><tr>
+          <th>Username</th><th>Registered</th><th>Tests</th><th>Last Active</th>
+        </tr></thead>
+        <tbody id="admin-tbody"></tbody>
+      </table>
+    </div>
+    <div style="margin-top:24px;" id="admin-extra"></div>
+  </div>
+</div>
+
+<!-- ===== LOGIN MODAL ===== -->
+<div class="modal-overlay" id="modal-login">
+  <div class="modal">
+    <div class="modal-header"><h2 id="modal-login-title">Login</h2><button class="modal-close" onclick="closeModal('modal-login')">✕</button></div>
+    <div class="form-group"><label>Username</label><input type="text" id="login-user" placeholder="Enter username" autocomplete="off"></div>
+    <div class="form-group"><label>Password</label><input type="password" id="login-pass" placeholder="Enter password" onkeydown="if(event.key==='Enter')handleLogin()"></div>
+    <div class="error-msg" id="login-error">Invalid username or password</div>
+    <button class="btn btn-primary btn-block" onclick="handleLogin()" style="margin-top:8px;" id="modal-login-btn">Login</button>
+    <div class="modal-footer" id="modal-login-footer">No account yet? <a onclick="switchAuthModal('register')">Register now</a></div>
+  </div>
+</div>
+
+<!-- ===== REGISTER MODAL ===== -->
+<div class="modal-overlay" id="modal-register">
+  <div class="modal">
+    <div class="modal-header"><h2 id="modal-register-title">Register</h2><button class="modal-close" onclick="closeModal('modal-register')">✕</button></div>
+    <div class="form-group"><label>Username</label><input type="text" id="reg-user" placeholder="Choose a username" autocomplete="off"></div>
+    <div class="form-group"><label>Password</label><input type="password" id="reg-pass" placeholder="Password (min 6 characters)"></div>
+    <div class="form-group"><label>Confirm Password</label><input type="password" id="reg-pass2" placeholder="Confirm your password" onkeydown="if(event.key==='Enter')handleRegister()"></div>
+    <div class="error-msg" id="reg-error">Registration failed. Please check your information.</div>
+    <button class="btn btn-primary btn-block" onclick="handleRegister()" style="margin-top:8px;" id="modal-register-btn">Register</button>
+    <div class="modal-footer" id="modal-register-footer">Already have an account? <a onclick="switchAuthModal('login')">Login now</a></div>
+  </div>
+</div>
+
+<!-- ===== ADMIN LOGIN MODAL ===== -->
+<div class="modal-overlay" id="modal-admin-login">
+  <div class="modal" style="max-width:360px;">
+    <div class="modal-header"><h2 id="modal-admin-title">Admin Login</h2><button class="modal-close" onclick="closeModal('modal-admin-login')">✕</button></div>
+    <div style="text-align:center;margin-bottom:16px;font-size:36px;">🔐</div>
+    <div class="form-group"><label>Admin Username</label><input type="text" id="admin-user" placeholder="Enter admin username" autocomplete="off"></div>
+    <div class="form-group"><label>Password</label><input type="password" id="admin-pass" placeholder="Enter admin password" onkeydown="if(event.key==='Enter')handleAdminLogin()"></div>
+    <div class="error-msg" id="admin-error">Invalid admin credentials</div>
+    <button class="btn btn-primary btn-block" onclick="handleAdminLogin()" style="margin-top:8px;" id="modal-admin-btn">Enter Admin Panel</button>
+  </div>
+</div>
+
+<!-- ===== ADMIN ACCESS BUTTON ===== -->
+<button class="admin-access-btn" onclick="openAdminLogin()" title="Admin Panel">⚙️</button>
+
+<!-- ===== FOOTER & ADS ===== -->
+<footer style="background:transparent; padding:0; border-top:none; margin-top:60px;">
+  <!-- Adsterra Ad Container - Hidden inside card-like wrapper -->
+  <div style="max-width:728px; margin:0 auto; padding:32px 0 24px;">
+    <!-- 728x90 Leaderboard -->
+    <div style="text-align:center; margin:0 auto 12px; overflow:hidden; border-radius:12px; background:rgba(255,255,255,0.5); border:1px solid var(--cream-dark); box-shadow:var(--shadow-sm);">
+      <script>
+        atOptions = {
+          'key' : '7399176015898a5b41f2c41d9f6cd7b6',
+          'format' : 'iframe',
+          'height' : 90,
+          'width' : 728,
+          'params' : {}
+        };
+      </script>
+      <script src="https://talentpastryadvisedly.com/7399176015898a5b41f2c41d9f6cd7b6/invoke.js"></script>
+    </div>
+    <!-- 468x60 Banner -->
+    <div style="text-align:center; margin:0 auto 12px; overflow:hidden; border-radius:12px; background:rgba(255,255,255,0.5); border:1px solid var(--cream-dark); box-shadow:var(--shadow-sm);">
+      <script>
+        atOptions = {
+          'key' : '523c88b9d8b3591935d187be2e8f8d4b',
+          'format' : 'iframe',
+          'height' : 60,
+          'width' : 468,
+          'params' : {}
+        };
+      </script>
+      <script src="https://talentpastryadvisedly.com/523c88b9d8b3591935d187be2e8f8d4b/invoke.js"></script>
+    </div>
+    <!-- 300x250 Inline -->
+    <div style="text-align:center; margin:0 auto 12px; overflow:hidden; border-radius:12px; background:rgba(255,255,255,0.5); border:1px solid var(--cream-dark); box-shadow:var(--shadow-sm);">
+      <script async="async" data-cfasync="false" src="https://pl29678646.effectivecpmnetwork.com/3c479f3424f982b35328e920e6f83092/invoke.js"></script>
+      <div id="container-3c479f3424f982b35328e920e6f83092" style="max-width:300px; margin:0 auto;"></div>
+    </div>
+    <!-- 320x50 Mobile -->
+    <div style="text-align:center; margin:0 auto 16px; overflow:hidden; border-radius:12px; background:rgba(255,255,255,0.5); border:1px solid var(--cream-dark); box-shadow:var(--shadow-sm);">
+      <script>
+        atOptions = {
+          'key' : '67aac74be6a6eca15b98aaed233409ee',
+          'format' : 'iframe',
+          'height' : 50,
+          'width' : 320,
+          'params' : {}
+        };
+      </script>
+      <script src="https://talentpastryadvisedly.com/67aac74be6a6eca15b98aaed233409ee/invoke.js"></script>
+    </div>
+  </div>
+  
+  <!-- Footer Content -->
+  <div style="text-align:center;padding:24px;color:var(--text-muted);font-size:13px;border-top:1px solid var(--cream-dark);background:transparent;">
+    <p id="footer-text">&copy; 2026 Mindtest &middot; Mental Health Platform | <a onclick="openModal('modal-privacy')" style="cursor:pointer;color:var(--coral-dark);">Privacy Policy</a> | Results for reference only, not a medical diagnosis</p>
+  </div>
+</footer>
+
+<!-- ===== PRIVACY MODAL ===== -->
+<div class="modal-overlay" id="modal-privacy">
+  <div class="modal" style="max-width:600px;">
+    <div class="modal-header"><h2 id="privacy-title">Privacy Policy</h2><button class="modal-close" onclick="closeModal('modal-privacy')">✕</button></div>
+    <div class="privacy-content" id="privacy-content">
+      <p><strong>Last Updated:</strong> June 2026</p>
+      <h3>1. Information Collection</h3><p>We collect only the following information when you register: username and password (encrypted). We do not collect your real name, email address, phone number, or any personally identifiable information. When you use the assessment features, your answers are stored locally in your browser (localStorage) and are not uploaded to any server.</p>
+      <h3>2. Use of Information</h3><p>The information we collect is used solely for the following purposes:</p><ul><li>Providing account login and assessment history features</li><li>Improving and optimizing the user experience</li><li>Generating anonymous usage statistics (visible in the admin panel)</li></ul>
+      <h3>3. Cookies</h3><p>We use localStorage to save your login status and interface preferences (such as theme). This platform does not use tracking cookies.</p>
+      <h3>4. Advertising</h3><p>This platform displays third-party advertisements. Some advertisers may use cookies and similar technologies to serve personalized ads. We do not share your personal information with advertisers.</p>
+      <h3>5. Disclaimer</h3><p>The mental health assessment results provided on this platform are for reference only and do not constitute any medical diagnosis or treatment advice. If you are experiencing significant psychological distress, please seek help from a professional counselor or doctor.</p>
+      <h3>6. Contact Us</h3><p>Email: <strong>cosmiccoconut@foxmail.com</strong></p>
+      <h3>7. Policy Updates</h3><p>We may update this privacy policy from time to time. The updated policy will be posted on this page with the revision date.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== TOAST ===== -->
+<div class="toast" id="toast"></div>
+
+<script>
+// ============================================================
+// DATA
+// ============================================================
+const TESTS = [
+  { id:'mental-health', name:'Mental Health Assessment', desc:'Assess your mood, anxiety, and sleep quality over the past two weeks.', icon:'🧠', color:'#FDE8E0',
+    questions:["Feeling down or hopeless","Loss of interest in things you once enjoyed","Trouble sleeping or sleeping too much","Feeling tired or having no energy","Changes in appetite","Feeling bad about yourself","Trouble concentrating","Moving or speaking slowly","Thoughts of self-harm","Feeling nervous or anxious","Unable to stop worrying","Worrying too much about different things","Trouble relaxing","Feeling irritable","Avoiding social situations","Feeling hopeless about the future"],
+    dims:['Mood','Anxiety','Sleep','Energy','Physical','Cognitive','Social'] },
+  { id:'personality', name:'Personality Test', desc:'Discover your personality traits and potential strengths.', icon:'🌟', color:'#E8ECF8',
+    questions:["Initiate conversations in social settings","Prefer following plans","Affected by criticism","Often self-reflect","Focus on details","Prefer solving problems alone","Attracted to new ideas","More emotional than rational","Enjoy being the center of attention","Weigh options carefully","Value time management","Enjoy solitude over parties"],
+    dims:['Extraversion','Conscientiousness','Neuroticism','Openness','Agreeableness'] },
+  { id:'stress', name:'Stress Level Test', desc:'Assess your recent stress levels and identify sources.', icon:'💪', color:'#FFF8E1',
+    questions:["Difficulty handling tasks","Irritated by small things","Always in a hurry","Can't relax after tasks","Frequent headaches or stomach issues","Sleep affected by stress","Feeling high expectations from others","Can't say no to requests","Worrying about the future","Lack of stress relief methods"],
+    dims:['Stress Perception','Physical Response','Coping Ability','Emotional Response'] },
+  { id:'social-anxiety', name:'Social Anxiety Screen', desc:'Screen for social anxiety tendencies.', icon:'🫂', color:'#E2EDEE',
+    questions:["Afraid of saying or doing the wrong thing","Fear of being the center of attention","Uncomfortable with strangers","Avoid crowded social events","Nervous when being watched","Fear of negative evaluation","Physical discomfort in social situations","Missing events due to anxiety"],
+    dims:['Social Avoidance','Performance Anxiety','Physical Response','Cognitive Worry'] },
+  { id:'sleep', name:'Sleep Quality Assessment', desc:'Evaluate your sleep quality and patterns.', icon:'🌙', color:'#EDE0F5',
+    questions:["Difficulty falling asleep","Waking up at night and can't go back to sleep","Still tired when waking up","Sleepy during the day affecting work","Snoring or breathing issues","Irregular sleep schedule","Can't stop thinking in bed","Unsatisfied with sleep quality"],
+    dims:['Falling Asleep','Maintenance','Daytime Function','Routine'] },
+];
+
+const BASE_OPTIONS = ['Not at all','Several days','Half the days','Most days','Nearly every day'];
+
+// ============================================================
+// LANGUAGE
+// ============================================================
+const LANG = {
+  nav_home:'Home', nav_tests:'Tests', nav_history:'History',
+  hero_badge:'Free · Professional Assessment', hero_h1:'Know Yourself, From the ', hero_h1hl:'Heart', hero_h1e:'',
+  hero_desc:'Evidence-based assessment tools to help you understand your mental state. Scientific, anonymous, convenient, and completely free.',
+  hero_btn1:'Start Assessment', hero_btn2:'Learn More', hero_s1:'Assessments', hero_s2:'Questions', hero_s3:'Dimensions',
+  tests_title:'All Assessments', tests_sub:'All free. Choose one and start your self-discovery journey.',
+  tests_free:'Free', tests_start:'Start', tests_q:' questions', tests_d:' dimensions',
+  quiz_q:'Question', quiz_prev:'Previous', quiz_next:'Next', quiz_result:'View Results', quiz_sel:'Please select an option first',
+  result_score:'Score', result_index:'Index', result_summary:'Summary', result_dims:'Dimensions', result_advice:'Suggestions',
+  result_back:'Home', result_save:'Save Report',
+  result_lv:['Good','Mild','Moderate','Needs Attention'],
+  result_br:['Your mental state is good. Keep up your current lifestyle and self-care routine.',
+             'You may be experiencing some mild fluctuations, which is normal. Take time to relax.',
+             'You may be under some stress. These feelings deserve attention. Seek help if needed.',
+             'Your score suggests significant distress. Please seek professional support.'],
+  result_av:[['Maintain a regular sleep schedule.','Engage in moderate physical activity.','Stay connected with friends and family.','Continue to monitor your emotional changes.'],
+             ['Schedule 15-30 minutes of relaxation daily.','Try keeping a mood journal.','Avoid screens before bedtime.','Talk regularly with someone you trust.'],
+             ['Consider booking a professional assessment.','Identify your main stressors.','Practice mindfulness or relaxation techniques.',"Don't isolate yourself. Share your feelings."],
+             ['Contact a mental health professional soon.','Tell someone you trust what you\'re going through.','If you have thoughts of self-harm, call a crisis hotline.','Remember: seeking help is a sign of courage.']],
+  auth_login:'Login', auth_register:'Register', auth_logout:'Are you sure you want to logout?',
+  auth_user:'Username', auth_pass:'Password', auth_pass2:'Confirm Password', auth_ph:'Password (min 6 chars)', auth_ph2:'Confirm password',
+  auth_lguser:'Enter username', auth_lgpass:'Enter password',
+  auth_no:'No account yet?', auth_has:'Already have an account?', auth_now:'Register now', auth_lgnow:'Login now',
+  auth_err:'Invalid username or password', auth_ok:'🎉 Welcome to Mindtest!', auth_wel:'🌸 Welcome back, ',
+  history_title:'History', history_sub:'View your assessment history', history_empty:'No history yet', history_go:'Go Assess', history_login:'Please login first',
+  admin_title:'Admin Panel', admin_lock:'Lock', admin_locked:'🔒 Locked', admin_cpw:'Change Password',
+  admin_login:'Admin Login', admin_btn:'Enter Admin Panel', admin_err:'Invalid admin credentials',
+  admin_s1:'Users', admin_s2:'Completed', admin_s3:'Active Users', admin_s4:'Assessments',
+  footer_txt:'© 2026 Mindtest · Mental Health Platform', footer_p:'Privacy Policy', footer_d:'Results for reference only, not a medical diagnosis',
+  theme_title:'Choose Theme',
+  opts:['Not at all','Several days','Half the days','Most days','Nearly every day'],
+  ds:['Good','Mild','High','Severe']
+};
+
+function __(key) {
+  var v = LANG[key];
+  return v !== undefined ? v : key;
+}
+
+// ============================================================
+// STATE
+// ============================================================
+let currentUser = null;
+let currentQ = 0, answers = [], answeredCount = 0, currentTest = null;
+
+// ============================================================
+// INIT
+// ============================================================
+function init() {
+  initAdmin();
+  var saved = localStorage.getItem('xinyu_user');
+  if (saved) { currentUser = JSON.parse(saved); }
+  var theme = localStorage.getItem('xinyu_theme') || 'default';
+  document.documentElement.setAttribute('data-theme', theme);
+  document.querySelectorAll('.theme-opt').forEach(function(el) {
+    el.classList.toggle('active', el.dataset.themeVal === theme);
+  });
+  renderNav();
+  renderTestCards();
+  renderHistory();
+}
+
+// ============================================================
+// THEME
+// ============================================================
+function toggleThemePicker() { document.getElementById('theme-picker').classList.toggle('show'); }
+function setTheme(val) {
+  document.documentElement.setAttribute('data-theme', val);
+  localStorage.setItem('xinyu_theme', val);
+  document.querySelectorAll('.theme-opt').forEach(function(el) { el.classList.toggle('active', el.dataset.themeVal === val); });
+  document.getElementById('theme-picker').classList.remove('show');
+}
+document.addEventListener('click', function(e) {
+  var tp = document.getElementById('theme-picker');
+  if (tp && tp.classList.contains('show')) {
+    if (!e.target.closest('.theme-btn') && !e.target.closest('#theme-picker')) tp.classList.remove('show');
+  }
+});
+
+// ============================================================
+// STORAGE
+// ============================================================
+function getUsers() { return JSON.parse(localStorage.getItem('xinyu_users') || '{}'); }
+function saveUsers(users) { localStorage.setItem('xinyu_users', JSON.stringify(users)); }
+function saveUser() { localStorage.setItem('xinyu_user', JSON.stringify(currentUser)); }
+function getHistory() { return JSON.parse(localStorage.getItem('xinyu_history') || '[]'); }
+
+// ============================================================
+// NAV
+// ============================================================
+function renderNav() {
+  var el = document.getElementById('nav-user');
+  document.querySelectorAll('.nav-link')[0].textContent = __('nav_home');
+  document.querySelectorAll('.nav-link')[1].textContent = __('nav_tests');
+  document.querySelectorAll('.nav-link')[2].textContent = __('nav_history');
+  if (currentUser) {
+    el.innerHTML = '<div class="nav-avatar" title="' + __('auth_logout') + '" onclick="handleLogout()">' + currentUser.username[0] + '</div>';
+  } else {
+    el.innerHTML = '<button class="btn btn-primary btn-sm" onclick="openModal(\'modal-login\')">' + __('auth_login') + '</button>';
+  }
+  document.querySelectorAll('.nav-link').forEach(function(l) { l.classList.remove('active'); });
+}
+function setNavActive(name) {
+  document.querySelectorAll('.nav-link').forEach(function(l) { l.classList.remove('active'); });
+  var map = { home:0, tests:1, history:2 };
+  if (map[name] !== undefined) document.querySelectorAll('.nav-link')[map[name]].classList.add('active');
+}
+function showHome() { switchPage('home'); setNavActive('home'); }
+function showTests() { if (!currentUser) { openModal('modal-login'); return; } switchPage('home'); setNavActive('tests'); document.getElementById('tests-section').scrollIntoView({behavior:'smooth'}); }
+function showHistory() { if (!currentUser) { openModal('modal-login'); return; } switchPage('history'); setNavActive('history'); renderHistory(); }
+function showResources() { switchPage('home'); setNavActive(null); document.getElementById('resources-section').scrollIntoView({behavior:'smooth'}); }
+function switchPage(name) {
+  document.querySelectorAll('.page').forEach(function(p) { p.classList.remove('active'); });
+  document.getElementById('page-'+name).classList.add('active');
+  window.scrollTo({ top:0, behavior:'smooth' });
+}
+
+// ============================================================
+// AUTH
+// ============================================================
+function openModal(id) { document.getElementById(id).classList.add('show'); var err = document.querySelector('#'+id+' .error-msg'); if (err) err.classList.remove('show'); }
+function closeModal(id) { document.getElementById(id).classList.remove('show'); }
+function switchAuthModal(target) { closeModal('modal-login'); closeModal('modal-register'); openModal('modal-'+target); }
+
+function handleRegister() {
+  var user = document.getElementById('reg-user').value.trim();
+  var pass = document.getElementById('reg-pass').value;
+  var pass2 = document.getElementById('reg-pass2').value;
+  var err = document.getElementById('reg-error');
+  if (!user||user.length<2) { err.textContent=__('auth_err'); err.classList.add('show'); return; }
+  if (pass.length<6) { err.textContent=__('auth_err'); err.classList.add('show'); return; }
+  if (pass!==pass2) { err.textContent=__('auth_err'); err.classList.add('show'); return; }
+  err.classList.remove('show');
+  var users = getUsers();
+  if (users[user]) { err.textContent=__('auth_err'); err.classList.add('show'); return; }
+  var now = new Date().toISOString();
+  users[user] = { password:pass, registerAt:now, lastActive:now, testCount:0 };
+  saveUsers(users);
+  currentUser = { username:user, balance:20 };
+  saveUser();
+  closeModal('modal-register');
+  renderNav();
+  showToast(__('auth_ok'));
+}
+
+function handleLogin() {
+  var user = document.getElementById('login-user').value.trim();
+  var pass = document.getElementById('login-pass').value;
+  var err = document.getElementById('login-error');
+  var users = getUsers();
+  if (!users[user]||users[user].password!==pass) { err.classList.add('show'); return; }
+  err.classList.remove('show');
+  currentUser = { username:user, balance:users[user].balance };
+  users[user].lastActive = new Date().toISOString();
+  saveUsers(users);
+  saveUser();
+  closeModal('modal-login');
+  renderNav();
+  showToast(__('auth_wel')+user);
+}
+
+function handleLogout() {
+  if (!confirm(__('auth_logout'))) return;
+  currentUser = null;
+  localStorage.removeItem('xinyu_user');
+  renderNav();
+  showToast('Logged out');
+  switchPage('home');
+}
+
+function checkAuthThenStart() {
+  if (!currentUser) { openModal('modal-login'); return; }
+  document.getElementById('tests-section').scrollIntoView({behavior:'smooth'});
+}
+
+// ============================================================
+// TEST CARDS
+// ============================================================
+function renderTestCards() {
+  document.getElementById('test-grid').innerHTML = TESTS.map(function(t) {
+    return '<div class="test-card" onclick="startTest(\'' + t.id + '\')">' +
+      '<div class="icon-wrap" style="background:' + t.color + '">' + t.icon + '</div>' +
+      '<h3>' + t.name + '</h3>' +
+      '<p>' + t.desc + '</p>' +
+      '<div class="meta"><span>📝 ' + t.questions.length + __('tests_q') + '</span><span>📊 ' + t.dims.length + __('tests_d') + '</span></div>' +
+      '<div class="bottom">' +
+      '<span class="free-badge">🆓 ' + __('tests_free') + '</span>' +
+      '<button class="btn btn-primary btn-sm">' + __('tests_start') + '</button>' +
+      '</div></div>';
+  }).join('');
+}
+
+// ============================================================
+// START TEST
+// ============================================================
+function startTest(testId) {
+  if (!currentUser) { openModal('modal-login'); return; }
+  var test = TESTS.find(function(t) { return t.id===testId; });
+  if (!test) return;
+  currentTest = test;
+  currentQ = 0;
+  answers = new Array(test.questions.length).fill(-1);
+  answeredCount = 0;
+  renderQuiz();
+  switchPage('quiz');
+  setNavActive(null);
+}
+
+function renderQuiz() {
+  var test = currentTest, total = test.questions.length, q = test.questions[currentQ];
+  var opts = BASE_OPTIONS;
+  var dots = '';
+  for (var i=0; i<total; i++) {
+    dots += '<span class="q-dot' + (answers[i]!==-1?' done':'') + (i===currentQ?' current':'') + '"></span>';
+  }
+  document.getElementById('quiz-wrapper').innerHTML =
+    '<div class="quiz-card">' +
+      '<div class="q-progress"><span class="lbl">' + __('quiz_q') + ' <strong>' + (currentQ+1) + '</strong> / ' + total + '</span><span class="lbl">' + Math.round(answeredCount/total*100) + '%</span></div>' +
+      '<div class="q-track"><div class="q-track-fill" style="width:' + (answeredCount/total*100) + '%"></div></div>' +
+      '<div class="q-number">' + test.icon + ' ' + test.name + '</div>' +
+      '<div class="q-text">' + q + '</div>' +
+      '<div class="opts">' +
+        opts.map(function(l,i) {
+          return '<div class="opt ' + (answers[currentQ]===i?'selected':'') + '" onclick="selectAnswer(' + i + ')">' +
+            '<div class="radio"></div><span class="lbl">' + l + '</span><span class="hint">' + i + '</span></div>';
+        }).join('') +
+      '</div>' +
+      '<div class="q-nav">' +
+        '<button class="btn btn-ghost" ' + (currentQ===0?'style="visibility:hidden"':'') + ' onclick="prevQuestion()"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>' + __('quiz_prev') + '</button>' +
+        '<button class="btn btn-primary btn-sm" id="q-next-btn" onclick="' + (currentQ===total-1?'showResult()':'nextQuestion()') + '">' + (currentQ===total-1?__('quiz_result'):__('quiz_next') + ' <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>') + '</button>' +
+      '</div>' +
+      '<div class="q-breadcrumb">' + dots + '</div>' +
+    '</div>';
+}
+
+function selectAnswer(idx) {
+  var wasEmpty = answers[currentQ] === -1;
+  answers[currentQ] = idx;
+  if (wasEmpty) {
+    answeredCount++;
+    var total = currentTest.questions.length;
+    var pctEl = document.querySelector('.q-progress .lbl:last-child');
+    if (pctEl) pctEl.textContent = Math.round(answeredCount/total*100) + '%';
+    var fillEl = document.querySelector('.q-track-fill');
+    if (fillEl) fillEl.style.width = (answeredCount/total*100) + '%';
+    var dot = document.querySelectorAll('.q-dot')[currentQ];
+    if (dot) dot.classList.add('done');
+  }
+  document.querySelectorAll('.opts .opt').forEach(function(el, i) {
+    el.classList.toggle('selected', i === idx);
+  });
+}
+function nextQuestion() { if (answers[currentQ]===-1) { showToast(__('quiz_sel')); return; } if (currentQ<currentTest.questions.length-1) { currentQ++; renderQuiz(); } }
+function prevQuestion() { if (currentQ>0) { currentQ--; renderQuiz(); } }
+
+// ============================================================
+// RESULTS
+// ============================================================
+function showResult() {
+  var test = currentTest;
+  for (var i=0;i<answers.length;i++) if (answers[i]===-1) answers[i]=0;
+  var total = answers.reduce(function(a,b) { return a+b; }, 0);
+  var max = test.questions.length*4;
+  var pct = Math.round(total/max*100);
+  var dimHtml = '', dimOrder = test.dims||[];
+  var statusLabels = __('ds');
+  if (dimOrder.length>0) {
+    var dimMap = {};
+    dimOrder.forEach(function(d,i) {
+      var start = Math.floor(i*test.questions.length/dimOrder.length);
+      var end = Math.floor((i+1)*test.questions.length/dimOrder.length);
+      var s=0,c=0;
+      for (var j=start;j<end&&j<test.questions.length;j++) { s+=answers[j]; c++; }
+      dimMap[d]={total:s,count:c};
+    });
+    for (var key in dimMap) {
+      if (dimMap.hasOwnProperty(key)) {
+        var val = dimMap[key];
+        var dp = Math.round(val.total/(val.count*4)*100);
+        var s,bc;
+        if (dp<=25){s=statusLabels[0];bc='#7E9EA3';}
+        else if(dp<=50){s=statusLabels[1];bc='#B89A4A';}
+        else if(dp<=75){s=statusLabels[2];bc='#C87A4A';}
+        else{s=statusLabels[3];bc='#B85A5A';}
+        dimHtml+='<div class="dim-item"><div class="top"><span class="name">'+key+'</span><span class="pct">'+dp+'%</span></div><div class="bar"><div class="fill" style="width:0%;background:'+bc+'" data-w="'+dp+'"></div></div><div class="status" style="color:'+bc+'">'+s+'</div></div>';
+      }
+    }
+  }
+  var lvls = __('result_lv');
+  var brfs = __('result_br');
+  var advs = __('result_av');
+  var li = [{max:20,cls:'green'},{max:40,cls:'yellow'},{max:60,cls:'orange'},{max:100,cls:'red'}];
+  var inf = li.find(function(l) { return pct<=l.max; }) || li[3];
+  var ii = li.indexOf(inf);
+  var colorMap = {green:'#4A8A5A',yellow:'#B89A4A',orange:'#C87A4A',red:'#B85A5A'};
+  var c = colorMap[inf.cls];
+  var now = new Date();
+  var dateStr = now.getFullYear()+'/'+(now.getMonth()+1)+'/'+now.getDate();
+  document.getElementById('result-content').innerHTML =
+    '<div class="result-header"><div class="result-tier ' + inf.cls + '">' + lvls[ii] + '</div><h2>' + test.icon + ' ' + test.name + '</h2><div class="result-date">' + dateStr + ' · ' + __('result_score') + ' ' + total + '/' + max + '</div></div>' +
+    '<div class="result-summary">' +
+    '<div class="result-ring"><svg width="130" height="130" viewBox="0 0 130 130"><circle cx="65" cy="65" r="52" fill="none" stroke="var(--cream-dark)" stroke-width="6"/><circle cx="65" cy="65" r="52" fill="none" stroke="' + c + '" stroke-width="6" stroke-dasharray="' + (2*Math.PI*52) + '" stroke-dashoffset="' + (2*Math.PI*52-pct/100*2*Math.PI*52) + '" stroke-linecap="round" style="transition:stroke-dashoffset 1.2s ease"/></svg><span class="num">' + pct + '</span><span class="lbl">' + __('result_index') + '</span></div>' +
+    '<div class="result-brief"><h3>' + __('result_summary') + '</h3><p>' + brfs[ii] + '</p></div>' +
+    '</div>' +
+    (dimHtml?'<div class="result-dims"><div class="sec-title">📊 '+__('result_dims')+'</div><div class="dim-grid">'+dimHtml+'</div></div>':'') +
+    '<div class="result-advice"><div class="sec-title">💡 ' + __('result_advice') + '</div><ul class="advice-list">' + advs[ii].map(function(a) { return '<li class="advice-item"><span class="dot" style="background:' + c + '"></span><span class="text">' + a + '</span></li>'; }).join('') + '</ul></div>' +
+    '<div class="result-actions"><button class="btn btn-primary btn-sm" onclick="showHome()">🏠 ' + __('result_back') + '</button><button class="btn btn-secondary btn-sm" onclick="window.print()">🖨️ ' + __('result_save') + '</button></div>';
+  setTimeout(function(){
+    document.querySelectorAll('.dim-item .fill').forEach(function(el){el.style.width=el.dataset.w+'%';});
+  },200);
+  var history = getHistory();
+  history.unshift({testId:test.id,testName:test.name,icon:test.icon,date:now.toISOString(),score:total,maxScore:max,pct:pct,level:lvls[ii],levelCls:inf.cls});
+  localStorage.setItem('xinyu_history',JSON.stringify(history.slice(0,50)));
+  switchPage('result');
+  setNavActive(null);
+}
+
+// ============================================================
+// HISTORY
+// ============================================================
+function renderHistory() {
+  if (!currentUser) { document.getElementById('history-list').innerHTML='<p style="color:var(--text-muted)">'+__('history_login')+'</p>'; return; }
+  var history = getHistory();
+  if (history.length===0) {
+    document.getElementById('history-list').innerHTML='<div style="text-align:center;padding:60px 20px;color:var(--text-muted)"><div style="font-size:40px;margin-bottom:12px;">📋</div><p>'+__('history_empty')+'</p><button class="btn btn-primary btn-sm" style="margin-top:12px;" onclick="showHome()">'+__('history_go')+'</button></div>';
+    return;
+  }
+  document.getElementById('history-list').innerHTML = history.map(function(h){
+    var d=new Date(h.date);
+    var ds = d.getFullYear()+'/'+(d.getMonth()+1)+'/'+d.getDate();
+    return '<div class="history-item"><span style="font-size:28px;">'+h.icon+'</span><div style="flex:1;"><div style="font-weight:600;font-size:15px;">'+h.testName+'</div><div style="font-size:13px;color:var(--text-muted);">'+ds+'</div></div><div style="text-align:right;"><div style="font-weight:700;font-size:18px;color:var(--indigo-dark);">'+h.score+'<span style="font-size:13px;color:var(--text-muted);font-weight:400;">/'+h.maxScore+'</span></div><div class="result-tier '+h.levelCls+'" style="font-size:11px;padding:2px 10px;margin:0;">'+h.level+'</div></div></div>';
+  }).join('');
+}
+
+// ============================================================
+// ADMIN
+// ============================================================
+function initAdmin() {
+  var adminData = JSON.parse(localStorage.getItem('xinyu_admin') || 'null');
+  if (!adminData) {
+    localStorage.setItem('xinyu_admin', JSON.stringify({ username:'cosmiccoconut', password:'888888', createdAt:new Date().toISOString() }));
+  }
+}
+function openAdminLogin() {
+  document.getElementById('admin-user').value='';
+  document.getElementById('admin-pass').value='';
+  document.getElementById('admin-error').classList.remove('show');
+  openModal('modal-admin-login');
+}
+function handleAdminLogin() {
+  var user = document.getElementById('admin-user').value.trim();
+  var pass = document.getElementById('admin-pass').value;
+  var err = document.getElementById('admin-error');
+  var adminData = JSON.parse(localStorage.getItem('xinyu_admin')||'{}');
+  if (user===adminData.username&&pass===adminData.password) {
+    err.classList.remove('show');
+    closeModal('modal-admin-login');
+    renderAdminPanel();
+  } else {
+    err.textContent=__('admin_err');
+    err.classList.add('show');
+  }
+}
+function renderAdminPanel() {
+  var users = getUsers();
+  var history = getHistory();
+  var userList = Object.entries(users);
+  var totalUsers = userList.length;
+  var totalTests = history.length;
+  var totalActive = userList.filter(function(e) { return e[1].testCount>0; }).length;
+  document.getElementById('admin-stats').innerHTML = '<div class="admin-stat-card"><div class="num">'+totalUsers+'</div><div class="lbl">'+__('admin_s1')+'</div></div><div class="admin-stat-card"><div class="num">'+totalTests+'</div><div class="lbl">'+__('admin_s2')+'</div></div><div class="admin-stat-card"><div class="num">'+totalActive+'</div><div class="lbl">'+__('admin_s3')+'</div></div><div class="admin-stat-card"><div class="num">'+TESTS.length+'</div><div class="lbl">'+__('admin_s4')+'</div></div>';
+  var tbody = document.getElementById('admin-tbody');
+  if (userList.length===0) {
+    tbody.innerHTML='<tr><td colspan="4" style="text-align:center;padding:40px;color:var(--text-muted);">No users registered</td></tr>';
+  } else {
+    tbody.innerHTML=userList.map(function(e) {
+      var name=e[0], data=e[1];
+      var reg = data.registerAt ? new Date(data.registerAt) : null;
+      var last = data.lastActive ? new Date(data.lastActive) : null;
+      return '<tr><td><strong>'+name+'</strong></td><td>'+(reg?reg.getFullYear()+'/'+(reg.getMonth()+1)+'/'+reg.getDate():'')+'</td><td>'+(data.testCount||0)+'</td><td>'+(last?last.getFullYear()+'/'+(last.getMonth()+1)+'/'+last.getDate():'')+'</td></tr>';
+    }).join('');
+  }
+  document.getElementById('admin-extra').innerHTML = '<div style="background:var(--bg-card);backdrop-filter:blur(12px);border-radius:var(--radius-lg);border:1px solid var(--cream-dark);padding:24px;"><div class="sec-title">📋 Recent Assessments</div>'+(history.length===0?'<p style="color:var(--text-muted);font-size:14px;">No records</p>':'<table class="admin-table"><thead><tr><th>Test</th><th>Score</th><th>Level</th><th>Date</th></tr></thead><tbody>'+history.slice(0,10).map(function(h){var d=new Date(h.date);return '<tr><td>'+h.icon+' '+h.testName+'</td><td><strong>'+h.score+'</strong>/'+h.maxScore+'</td><td><span class="badge" style="background:var(--cream-dark);">'+h.level+'</span></td><td>'+d.getFullYear()+'/'+(d.getMonth()+1)+'/'+d.getDate()+'</td></tr>';}).join('')+'</tbody></table>')+'</div>';
+  switchPage('admin');
+  setNavActive(null);
+}
+function lockAdmin() { if (confirm('Lock admin panel?')) { switchPage('home'); setNavActive('home'); showToast(__('admin_locked')); } }
+function showChangeAdminPwd() {
+  var pwd = prompt('Enter new admin password (min 6 chars):');
+  if (!pwd||pwd.length<6) { if(pwd)showToast('Too short'); return; }
+  var c = prompt('Confirm new password:');
+  if (pwd!==c) { showToast('Not matched'); return; }
+  var d=JSON.parse(localStorage.getItem('xinyu_admin')||'{}');
+  d.password=pwd;
+  localStorage.setItem('xinyu_admin',JSON.stringify(d));
+  showToast('✅ Password changed');
+}
+
+// ============================================================
+// TOAST
+// ============================================================
+function showToast(msg) {
+  var t=document.getElementById('toast');
+  t.textContent=msg; t.classList.add('show');
+  clearTimeout(t._timer);
+  t._timer=setTimeout(function(){t.classList.remove('show');},2200);
+}
+
+// ============================================================
+// KEYBOARD
+// ============================================================
+document.addEventListener('keydown',function(e){
+  if (!document.getElementById('page-quiz').classList.contains('active')||!currentTest) return;
+  var n=parseInt(e.key);
+  if (n>=1&&n<=5){selectAnswer(n-1);return;}
+  if (e.key==='Enter'||e.key==='ArrowRight'){currentQ===currentTest.questions.length-1?showResult():nextQuestion();}
+  if (e.key==='ArrowLeft') prevQuestion();
+  if (e.key==='Escape'&&confirm('Quit this test?')) showHome();
+});
+
+init();
+</script>
+</body>
+</html>
