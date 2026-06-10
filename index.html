@@ -1002,6 +1002,49 @@
     }
     
     // Quiz
+    const quizData = {
+      'mental-health': {
+        title: 'Mental Health Assessment',
+        questions: [
+          'How often do you feel down, depressed, or hopeless?',
+          'How often do you feel anxious or nervous?',
+          'How often do you lose interest in things you once enjoyed?',
+          'How often do you have trouble sleeping or staying asleep?',
+          'How often do you feel energetic and motivated?'
+        ]
+      },
+      'anxiety': {
+        title: 'Anxiety Screening',
+        questions: [
+          'How often do you feel restless or unable to relax?',
+          'How often do you worry too much about different things?',
+          'How often do you feel afraid as if something awful might happen?',
+          'How often do you experience physical symptoms like rapid heartbeat or sweating when anxious?',
+          'How often do anxiety symptoms interfere with your daily activities?'
+        ]
+      },
+      'depression': {
+        title: 'Depression Screening',
+        questions: [
+          'How often do you feel sad, empty, or hopeless?',
+          'How often do you feel tired or have little energy?',
+          'How often do you have poor appetite or overeat?',
+          'How often do you feel bad about yourself or feel like a failure?',
+          'How often do you have trouble concentrating on things?'
+        ]
+      },
+      'stress': {
+        title: 'Stress Level Test',
+        questions: [
+          'How often do you feel overwhelmed by your responsibilities?',
+          'How often do you have trouble managing your time effectively?',
+          'How often do you feel physically tense or have headaches from stress?',
+          'How often do you find it hard to unwind and relax?',
+          'How often does stress affect your relationships or mood?'
+        ]
+      }
+    };
+    
     function startTest(testId) {
       if (!currentUser) {
         openModal('modal-login');
@@ -1017,8 +1060,10 @@
     function renderQuestion() {
       const progress = ((currentQuestion + 1) / 5) * 100;
       document.getElementById('progressFill').style.width = progress + '%';
+      
+      const questions = quizData[currentTest.id] ? quizData[currentTest.id].questions : quizData['mental-health'].questions;
       document.getElementById('questionText').textContent = 
-        `Question ${currentQuestion + 1} of 5: How often do you feel anxious or stressed?`;
+        `Question ${currentQuestion + 1} of 5: ${questions[currentQuestion]}`;
       
       const options = ['Never', 'Rarely', 'Sometimes', 'Often', 'Always'];
       document.getElementById('optionsContainer').innerHTML = options.map((opt, idx) => `
