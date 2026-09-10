@@ -152,6 +152,17 @@
       }
     });
 
+    // Update document title if applicable
+    var titleEl = document.querySelector('title[data-i18n]');
+    if (titleEl) {
+      var titleKey = titleEl.getAttribute('data-i18n');
+      var titleText = window.I18N[window.CURRENT_LANG] && window.I18N[window.CURRENT_LANG][titleKey];
+      if (titleText) {
+        titleEl.textContent = titleText;
+        document.title = titleText;
+      }
+    }
+
     // Update lang buttons
     document.getElementById('lang-zh').classList.toggle('active', window.CURRENT_LANG === 'zh');
     document.getElementById('lang-en').classList.toggle('active', window.CURRENT_LANG === 'en');

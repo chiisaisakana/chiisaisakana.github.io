@@ -89,6 +89,12 @@ window.I18N = {
     'sleep_meta_1': '⏱ 约8分钟',
     'sleep_meta_2': '🔒 完全匿名',
     'sleep_options': ['完全没问题', '有一点问题', '比较多问题', '问题很严重'],
+    'scl90_title_page': 'SCL-90 症状自评量表 | 心理健康测评 - MindTest',
+    'phq9_title_page': 'PHQ-9 抑郁自评量表 | 抑郁症筛查测试 - MindTest',
+    'gad7_title_page': 'GAD-7 焦虑自评量表 | 焦虑症筛查测试 - MindTest',
+    'mbti_title_page': 'MBTI人格类型测试 | 16型人格在线测评 - MindTest',
+    'stress_title_page': '压力指数测评 | 你有多大的压力？- MindTest',
+    'sleep_title_page': '睡眠质量测评 PSQI | 你的睡眠健康吗？- MindTest',
   },
 
   en: {
@@ -178,6 +184,12 @@ window.I18N = {
     'sleep_meta_1': '⏱ About 8 min',
     'sleep_meta_2': '🔒 Anonymous',
     'sleep_options': ['No problem', 'Some problem', 'More problems', 'Serious problems'],
+    'scl90_title_page': 'SCL-90 Symptom Checklist | Mental Health Assessment - MindTest',
+    'phq9_title_page': 'PHQ-9 Depression Scale | Depression Screening Test - MindTest',
+    'gad7_title_page': 'GAD-7 Anxiety Scale | Anxiety Disorder Screening - MindTest',
+    'mbti_title_page': 'MBTI Personality Test | 16 Personality Types - MindTest',
+    'stress_title_page': 'Stress Assessment | How Stressed Are You? - MindTest',
+    'sleep_title_page': 'Sleep Quality Assessment PSQI | Is Your Sleep Healthy? - MindTest',
   }
 };
 
