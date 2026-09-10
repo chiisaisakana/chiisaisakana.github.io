@@ -10,7 +10,7 @@
     if (!test) return;
 
     var i18n = window.I18N[window.CURRENT_LANG] || {};
-    var translatedOptions = i18n[testKey + 'options'] || test.options;
+    var translatedOptions = i18n[testKey + '_options'] || test.options;
     var answers = [];
     var currentQ = 0;
     var questions = window.I18N[window.CURRENT_LANG] ? test.questionsList.map(function(q, i) { return { text: q.text, options: window.I18N[window.CURRENT_LANG][testKey + '_options'] }; }) : test.questionsList;
