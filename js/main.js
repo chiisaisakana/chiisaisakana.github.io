@@ -138,10 +138,15 @@
       var key = el.getAttribute('data-i18n');
       var translations = window.I18N[window.CURRENT_LANG];
       if (translations && translations[key]) {
+        var value = translations[key];
+        // Handle array values by joining with ' · '
+        if (Array.isArray(value)) {
+          value = value.join(' · ');
+        }
         if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-          el.placeholder = translations[key];
+          el.placeholder = value;
         } else {
-          el.innerHTML = translations[key];
+          el.innerHTML = value;
         }
       }
     });
