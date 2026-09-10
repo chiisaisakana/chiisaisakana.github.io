@@ -13,7 +13,7 @@
   <div class="container header-inner">
     <a href="index.html" class="logo">💜 MindTest</a>
     <nav class="nav">      <button onclick="switchLang('zh')" id="lang-zh" class="lang-btn active">中文</button>      <button onclick="switchLang('en')" id="lang-en" class="lang-btn">EN</button>
-      <a href="index.html">首页</a>
+      <a href="index.html" data-i18n="home">首页</a>
       <a href="index.html#tests">所有测试</a>
     </nav>
   </div>
@@ -44,7 +44,7 @@
   <div id="questions-container"></div>
 
   <div class="test-actions">
-    <a href="index.html" class="btn btn-secondary">返回首页</a>
+    <a href="index.html" class="btn btn-secondary" data-i18n="back_home">返回首页</a>
     <span></span>
   </div>
 
@@ -60,7 +60,7 @@
 
 <footer class="site-footer">
   <div class="container">
-    <p>💜 MindTest · 让每个人都能更好地了解自己</p>
+    <p>💜 MindTest · <span data-i18n="footer_slogan">让每个人都能更好地了解自己</span></p>
   </div>
 </footer>
 
