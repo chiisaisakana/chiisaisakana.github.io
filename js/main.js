@@ -145,7 +145,7 @@
         }
       }
     });
-    
+
     // Update lang buttons
     document.getElementById('lang-zh').classList.toggle('active', window.CURRENT_LANG === 'zh');
     document.getElementById('lang-en').classList.toggle('active', window.CURRENT_LANG === 'en');
