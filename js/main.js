@@ -89,15 +89,20 @@
       var resultHtml = '<div class="result-page">';
       resultHtml += '<div class="result-card">';
       resultHtml += '<div class="test-icon">' + test.icon + '</div>';
-      resultHtml += '<h2>' + test.title + '</h2>';
+      var i18n = window.I18N[window.CURRENT_LANG] || {};
+      var testTitle = i18n[testKey + '_title'] || test.title;
+      resultHtml += '<h2>' + testTitle + '</h2>';
       resultHtml += '<div class="result-score">' + score + '</div>';
       resultHtml += '<div class="result-level ' + level.cls + '">' + level.text + '</div>';
       resultHtml += '<div class="result-desc">';
-      resultHtml += '满分 ' + maxScore + ' 分 | 得分率 ' + ((score / maxScore) * 100).toFixed(1) + '%';
+      var scoreDesc = i18n['result_score_desc'] || '满分 {max} 分 | 得分率 {percent}%';
+      scoreDesc = scoreDesc.replace('{max}', maxScore).replace('{percent}', ((score / maxScore) * 100).toFixed(1));
+      resultHtml += scoreDesc;
       resultHtml += '</div></div>';
 
       if (test.dimensions && test.dimensions.length > 1) {
-        resultHtml += '<div class="result-card"><h3>各维度分析</h3><div class="factor-grid">';
+        var dimTitle = i18n['result_dimension_title'] || '各维度分析';
+        resultHtml += '<div class="result-card"><h3>' + dimTitle + '</h3><div class="factor-grid">';
         test.dimensions.forEach(function(dim) {
           var dimScore = score;
           var dimLevel = test.scoring.level(dimScore);
@@ -115,10 +120,13 @@
 
       resultHtml += '<div class="ad-placeholder"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4116656020104879" data-ad-slot="4402557622"></ins></div>';
       resultHtml += '<div class="result-actions">';
-      resultHtml += '<a href="index.html" class="btn btn-primary">返回首页</a>';
-      resultHtml += '<button class="btn btn-secondary" onclick="location.reload()">重新测评</button>';
+      var backHomeText = i18n['result_back_home'] || '返回首页';
+      var retryText = i18n['result_retry'] || '重新测评';
+      resultHtml += '<a href="index.html" class="btn btn-primary">' + backHomeText + '</a>';
+      resultHtml += '<button class="btn btn-secondary" onclick="location.reload()">' + retryText + '</button>';
       resultHtml += '</div>';
-      resultHtml += '<div class="disclaimer" style="margin-top:24px">⚠️ 本测试结果仅供参考，不构成医疗诊断。如检测到严重心理问题，请及时咨询专业心理咨询师或就医。</div>';
+      var disclaimerText = i18n['result_disclaimer'] || '⚠️ 本测试结果仅供参考，不构成医疗诊断。如检测到严重心理问题，请及时咨询专业心理咨询师或就医。';
+      resultHtml += '<div class="disclaimer" style="margin-top:24px">' + disclaimerText + '</div>';
       resultHtml += '</div>';
 
       document.body.innerHTML = resultHtml;

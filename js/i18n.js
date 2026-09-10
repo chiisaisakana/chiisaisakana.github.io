@@ -34,6 +34,11 @@ window.I18N = {
     'about_desc': 'MindTest 是一个免费的心理健康测评平台，致力于让更多人了解自己的情绪状态。所有量表均源自心理学领域公认的研究工具，仅供自我探索参考，不能替代专业心理诊断。',
     'footer_slogan': '让每个人都能更好地了解自己',
     'footer_note': '本站所有测试结果仅供个人参考，不能替代专业医疗诊断',
+    'result_score_desc': '满分 {max} 分 | 得分率 {percent}%',
+    'result_dimension_title': '各维度分析',
+    'result_back_home': '返回首页',
+    'result_retry': '重新测评',
+    'result_disclaimer': '⚠️ 本测试结果仅供参考，不构成医疗诊断。如检测到严重心理问题，请及时咨询专业心理咨询师或就医。',
 
     // Tests
     'scl90_title': 'SCL-90 症状自评量表',
@@ -190,6 +195,11 @@ window.I18N = {
     'mbti_title_page': 'MBTI Personality Test | 16 Personality Types - MindTest',
     'stress_title_page': 'Stress Assessment | How Stressed Are You? - MindTest',
     'sleep_title_page': 'Sleep Quality Assessment PSQI | Is Your Sleep Healthy? - MindTest',
+    'result_score_desc': 'Max {max} points | Score {percent}%',
+    'result_dimension_title': 'Dimension Analysis',
+    'result_back_home': 'Back Home',
+    'result_retry': 'Retake Test',
+    'result_disclaimer': '⚠️ Results are for reference only and do not constitute medical diagnosis. If you detect serious psychological issues, please consult a professional psychologist or seek medical attention.',
   }
 };
 
