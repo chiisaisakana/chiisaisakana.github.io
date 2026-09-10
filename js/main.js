@@ -21,9 +21,10 @@
 
     function renderQuestion() {
       var q = questions[currentQ];
+      var i18n = window.I18N[window.CURRENT_LANG] || {};
 
       container.innerHTML = '<div class="question-block">' +
-        '<div class="question-num">第 ' + (currentQ + 1) + ' 题 / 共 ' + questions.length + ' 题</div>' +
+        '<div class="question-num">' + (i18n['question_num'] || '第') + ' ' + (currentQ + 1) + ' ' + (i18n['question_suffix'] || '题') + ' / ' + questions.length + ' ' + (i18n['total'] || '题') + '</div>' +
         '<div class="question-text">' + (i18n[testKey + '_questions'] && i18n[testKey + '_questions'][currentQ] ? i18n[testKey + '_questions'][currentQ] : q.text) + '</div>' +
         '<div class="options"></div>' +
       '</div>';
