@@ -102,10 +102,9 @@ window.TESTS = {
       total(answers) { return answers.reduce((s, v) => s + v, 0); },
       level(score) {
         const avg = score / 90;
-        if (avg <= 1.5) return { text: '正常', cls: 'level-normal' };
-        if (avg <= 2.5) return { text: '轻度', cls: 'level-mild' };
-        if (avg <= 3.5) return { text: '中度', cls: 'level-severe' };
-        return { text: '重度', cls: 'level-severe' };
+        const levelKey = avg <= 1.5 ? 'scl90_level_normal' : avg <= 2.5 ? 'scl90_level_mild' : avg <= 3.5 ? 'scl90_level_moderate' : 'scl90_level_severe';
+        const cls = avg <= 1.5 ? 'level-normal' : avg <= 2.5 ? 'level-mild' : 'level-severe';
+        return { text: window.t(levelKey), cls: cls };
       }
     }
   },
@@ -130,11 +129,9 @@ window.TESTS = {
     scoring: {
       total(answers) { return answers.reduce((s, v) => s + v, 0); },
       level(score) {
-        if (score <= 4) return { text: '无明显抑郁', cls: 'level-normal' };
-        if (score <= 9) return { text: '轻度抑郁', cls: 'level-mild' };
-        if (score <= 14) return { text: '中度抑郁', cls: 'level-mild' };
-        if (score <= 19) return { text: '中重度抑郁', cls: 'level-severe' };
-        return { text: '重度抑郁', cls: 'level-severe' };
+        const levelKey = score <= 4 ? 'phq9_level_none' : score <= 9 ? 'phq9_level_mild' : score <= 14 ? 'phq9_level_moderate' : score <= 19 ? 'phq9_level_mod_severe' : 'phq9_level_severe';
+        const cls = score <= 4 ? 'level-normal' : score <= 14 ? 'level-mild' : 'level-severe';
+        return { text: window.t(levelKey), cls: cls };
       }
     }
   },
@@ -157,10 +154,9 @@ window.TESTS = {
     scoring: {
       total(answers) { return answers.reduce((s, v) => s + v, 0); },
       level(score) {
-        if (score <= 4) return { text: '无明显焦虑', cls: 'level-normal' };
-        if (score <= 9) return { text: '轻度焦虑', cls: 'level-mild' };
-        if (score <= 14) return { text: '中度焦虑', cls: 'level-mild' };
-        return { text: '重度焦虑', cls: 'level-severe' };
+        const levelKey = score <= 4 ? 'gad7_level_none' : score <= 9 ? 'gad7_level_mild' : score <= 14 ? 'gad7_level_moderate' : 'gad7_level_severe';
+        const cls = score <= 4 ? 'level-normal' : score <= 14 ? 'level-mild' : 'level-severe';
+        return { text: window.t(levelKey), cls: cls };
       }
     }
   },
@@ -186,12 +182,8 @@ window.TESTS = {
     scoring: {
       total(answers) { return answers.reduce((s, v) => s + v, 0); },
       level(score) {
-        // Simplified MBTI scoring - just show total for now
-        if (score <= 20) return { text: '偏向 ESIJ 型', cls: 'level-normal' };
-        if (score <= 30) return { text: '偏向 ENSJ 型', cls: 'level-normal' };
-        if (score <= 40) return { text: '偏向 ENFP 型', cls: 'level-normal' };
-        if (score <= 50) return { text: '偏向 ENTJ 型', cls: 'level-normal' };
-        return { text: '偏向 INTJ 型', cls: 'level-normal' };
+        const levelKey = score <= 20 ? 'mbti_level_esij' : score <= 30 ? 'mbti_level_ensj' : score <= 40 ? 'mbti_level_enfp' : score <= 50 ? 'mbti_level_entj' : 'mbti_level_intj';
+        return { text: window.t(levelKey), cls: 'level-normal' };
       }
     }
   },
@@ -217,11 +209,9 @@ window.TESTS = {
     scoring: {
       total(answers) { return answers.reduce((s, v) => s + v, 0); },
       level(score) {
-        if (score <= 15) return { text: '压力很小', cls: 'level-normal' };
-        if (score <= 25) return { text: '轻度压力', cls: 'level-mild' };
-        if (score <= 35) return { text: '中度压力', cls: 'level-mild' };
-        if (score <= 40) return { text: '重度压力', cls: 'level-severe' };
-        return { text: '极度压力', cls: 'level-severe' };
+        const levelKey = score <= 15 ? 'stress_level_minimal' : score <= 25 ? 'stress_level_mild' : score <= 35 ? 'stress_level_moderate' : score <= 40 ? 'stress_level_severe' : 'stress_level_extreme';
+        const cls = score <= 15 ? 'level-normal' : score <= 35 ? 'level-mild' : 'level-severe';
+        return { text: window.t(levelKey), cls: cls };
       }
     }
   },
@@ -256,10 +246,9 @@ window.TESTS = {
     scoring: {
       total(answers) { return answers.reduce((s, v) => s + v, 0); },
       level(score) {
-        if (score <= 7) return { text: '睡眠良好', cls: 'level-normal' };
-        if (score <= 14) return { text: '轻度睡眠问题', cls: 'level-mild' };
-        if (score <= 21) return { text: '中度睡眠问题', cls: 'level-mild' };
-        return { text: '严重睡眠问题', cls: 'level-severe' };
+        const levelKey = score <= 7 ? 'sleep_level_good' : score <= 14 ? 'sleep_level_mild' : score <= 21 ? 'sleep_level_moderate' : 'sleep_level_severe';
+        const cls = score <= 7 ? 'level-normal' : score <= 21 ? 'level-mild' : 'level-severe';
+        return { text: window.t(levelKey), cls: cls };
       }
     }
   }
