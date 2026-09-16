@@ -137,6 +137,22 @@
     renderQuestion();
     (adsbygoogle = window.adsbygoogle || []).push({});
     updateProgress();
+
+    // Listen for language changes
+    window.addEventListener('languageChange', function() {
+      var newI18n = window.I18N[window.CURRENT_LANG] || {};
+      var newTranslatedOptions = newI18n[testKey + '_options'] || test.options;
+      // Update questions with translated options
+      questions = test.questionsList.map(function(q, i) {
+        return { text: q.text, options: newI18n[testKey + '_options'] };
+      });
+      translatedOptions = newTranslatedOptions;
+      // Re-render current question and progress
+      renderQuestion();
+      updateProgress();
+      // Update static elements
+      applyTranslations();
+    });
   }
 
   
