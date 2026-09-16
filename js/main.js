@@ -24,7 +24,7 @@
       var i18n = window.I18N[window.CURRENT_LANG] || {};
 
       container.innerHTML = '<div class="question-block">' +
-        '<div class="question-num">' + ((i18n['question_num'] != null && i18n['question_num'] !== '') ? i18n['question_num'] : '第') + ' ' + (currentQ + 1) + ' ' + ((i18n['question_suffix'] != null && i18n['question_suffix'] !== '') ? i18n['question_suffix'] : '题') + ' / ' + questions.length + ' ' + ((i18n['total'] != null && i18n['total'] !== '') ? i18n['total'] : '题') + '</div>' +
+        '<div class="question-num">' + (i18n['question_num'] !== undefined && i18n['question_num'] !== null ? i18n['question_num'] : '') + ' ' + (currentQ + 1) + ' ' + (i18n['question_suffix'] !== undefined && i18n['question_suffix'] !== null ? i18n['question_suffix'] : '题') + ' / ' + questions.length + ' ' + (i18n['total'] !== undefined && i18n['total'] !== null ? i18n['total'] : '题') + '</div>' +
         '<div class="question-text">' + (i18n[testKey + '_questions'] && i18n[testKey + '_questions'][currentQ] ? i18n[testKey + '_questions'][currentQ] : q.text) + '</div>' +
         '<div class="options"></div>' +
       '</div>';
@@ -75,7 +75,7 @@
       var fill = document.getElementById('progress-fill');
       var text = document.getElementById('progress-text');
       if (fill) fill.style.width = pct + '%';
-      if (text) text.textContent = ((i18n['answered'] != null && i18n['answered'] !== '') ? i18n['answered'] : '已回答') + ' ' + answered + '/' + questions.length + ((i18n['of'] != null && i18n['of'] !== '') ? i18n['of'] : '题');
+      if (text) text.textContent = (i18n['answered'] !== undefined && i18n['answered'] !== null ? i18n['answered'] : '已回答') + ' ' + answered + '/' + questions.length + (i18n['of'] !== undefined && i18n['of'] !== null ? i18n['of'] : '题');
     }
 
     function showResult() {
