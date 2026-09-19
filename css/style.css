@@ -107,6 +107,10 @@ a:hover { color: var(--accent); }
 .progress-fill { height: 100%; background: var(--accent); border-radius: 20px; transition: width .3s; }
 .progress-text { text-align: center; font-size: 0.8rem; color: var(--text-muted); margin-bottom: 8px; }
 
+.test-content-section { max-width: 700px; margin: 0 auto 32px; text-align: center; }
+.test-content-section h2 { font-size: 1.3rem; margin-bottom: 16px; color: var(--accent-light); }
+.test-content-section p { text-align: left; color: var(--text-muted); font-size: 0.9rem; line-height: 1.8; margin-bottom: 12px; }
+
 .question-block { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; margin-bottom: 16px; animation: fadeIn 0.3s ease; }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 .question-num { font-size: 0.75rem; color: var(--accent-light); margin-bottom: 8px; }
